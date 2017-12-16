@@ -1,0 +1,2134 @@
+<!DOCTYPE HTML>
+<html>
+		<head>
+		
+		    <meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+			
+            <!-- Favicon -->
+            <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+			<!-- Title -->
+			<title>Dafne Art Projects</title>
+			
+			<!-- Bootstrap & Font-Awesome CSS -->
+			<link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'>
+			<link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'>
+			
+			<!-- Custom CSS -->
+			<link rel="stylesheet" href="css/style.css" type='text/css'>
+			<link rel="stylesheet" href="css/prettyPhoto.css" type='text/css'>
+			<link rel="stylesheet" href="css/responsive.css" type='text/css'>
+			
+			<!-- Animation CSS -->
+			<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+			
+			<!-- Google Webfont
+			<link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel="stylesheet" type='text/css'> -->
+            
+            <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Roboto" rel="stylesheet"> 
+			
+			<!-- js files & script -->
+			<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+			<script type="text/javascript" src="js/hover_pack.js"></script>
+			<script type="text/javascript">
+								jQuery(document).ready(function($) {
+									$(".scroll").click(function(event){		
+										event.preventDefault();
+										$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+									});
+								});
+			</script>
+			<script type="text/javascript" src="js/move-top.js"></script>
+			<script type="text/javascript" src="js/easing.js"></script>
+			<script type="text/javascript" src="js/modernizr.js"></script>
+			<script type="text/javascript" src="js/retina.js"></script>
+			<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+            <script type="text/javascript" src="js/myJS.js"></script>
+			<script type="text/javascript" src="js/wow.min.js"></script>
+			<script>
+				 new WOW().init();
+			</script>
+            
+                                                        <script>
+function _(id){ return document.getElementById(id); }
+function submitForm(){
+	_("mybtn").disabled = true;
+	_("status").innerHTML = 'please wait ...';
+	var formdata = new FormData();
+	formdata.append( "n", _("n").value );
+	formdata.append( "e", _("e").value );
+	formdata.append( "m", _("m").value );
+	var ajax = new XMLHttpRequest();
+	ajax.open( "POST", "example_parser.php" );
+	ajax.onreadystatechange = function() {
+		if(ajax.readyState == 4 && ajax.status == 200) {
+			if(ajax.responseText == "success"){
+				_("my_form").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
+			} else {
+				_("status").innerHTML = ajax.responseText;
+				_("mybtn").disabled = false;
+			}
+		}
+	}
+	ajax.send( formdata );
+}
+</script>
+ <!--           
+<!-- JQuery for SLIDESHOW-->	
+ <!--  	<script>
+$(document).ready(function(){
+  $("#slideshow > div:gt(0)").hide();
+  setInterval(function() {
+    $("#slideshow > div:first")
+      .fadeOut(2000)
+      .next()
+      .fadeIn(2000)
+      .end()
+      .appendTo("#slideshow");
+  },9000);
+});
+	</script>
+  -->          
+            
+			
+		</head>
+		<body>
+            <header id="header"> <!-- Header Part -->
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+			<h2 class="w3-validation">For W3 Validation</h2>
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+					<div class="header">
+						<div class="container">
+								<!-- start-top-nav -->
+								<div class="top-nav">
+									<div class="top-header">
+										<div class="responsive-logo">
+										   <a href="index.html"><img src="images/logo.png" alt=""/></a>
+										</div>
+									</div>
+									<nav class="nav">
+                                        
+                                                                                                                           
+                                            
+                                             <!-- language script-->
+                                            <script type="text/javascript">
+                                            
+                                                    var button = document.getElementById("language");
+                                                    button.addEventListener('click', function() {
+                                                      if (button.getAttribute("data-text-swap") == button.innerHTML) {
+                                                        button.innerHTML = button.getAttribute("data-text-original");
+                                            <!--English Menu-->   
+                                                    //document.getElementById("home").innerHTML = "HOME";     
+                                            <!--English About US-->
+                                                          document.getElementById("aboutUs1").innerHTML = "Dafne Art Project is an Irish provider of Art related services to businesses such as big corporations, small companies, hotels and offices.";
+                                                          document.getElementById("aboutUs2").innerHTML = "We aspire to foster the appreciation of shapes, colors and designs that can change the atmosphere of work places and urban spaces. Our portfolio boasts a range of over a hundred international artists from London, Rome, Paris, Dublin, Amsterdam and Moscow.";
+                                                          document.getElementById("aboutUs3").innerHTML = "We aim to collaborate with architects, construction firms and galleries in Europe to provide high value Art works,murales,sculptures etc to final clients.";
+                                                          document.getElementById("language").style.backgroundImage = "url('images/flags/italianIcon20_16.png')";
+                                            <!--English Quotes--> 
+                                                          document.getElementById("languageQuotes").innerHTML = "Where the spirit does not work with the hand, there is no Art.";
+                                            <!--Italian-->
+                                                      } else {
+                                                        button.setAttribute("data-text-original", button.innerHTML);
+                                                        button.innerHTML = button.getAttribute("data-text-swap");
+                                            <!--Italian Menu-->   
+                                                    //document.getElementById("home").innerHTML="INIZIO";
+                                           <!--Italian About US-->               
+                                                          document.getElementById("aboutUs1").innerHTML = "Dafne Art Project e' una societa' irlandese che fornisce servizi correlati all'arte alle imprese, piccole compagnie, uffici professionali e alberghi.";
+                                                          
+                                                          document.getElementById("aboutUs2").innerHTML = " Cio` a cui aspiriamo e`incoraggiare l'apprezzamento di nuove forme, colori e design e dimostrare come riescano a cambiare l'atmosfera nei luoghi di lavoro e negli spazi urbani. Il nostro portfolio vanta piu` di cento artisti provenienti dalle principali capitali europee: Londra, Roma, Amsterdam, Parigi, Dublino ect";
+                                                          
+                                                          document.getElementById("aboutUs3").innerHTML ="Puntiamo a collaborare con architetti, arredatori d'interni e compagnie di costruzione a cui fornire opere d'arte di alto valore, murales, sculture megalitiche ect ai loro clienti.";
+                                                        
+                                                          document.getElementById("language").style.backgroundImage = "url('images/flags/britishIcon20_16.png')";
+                                                          
+                                            <!--Italian Quotes--> 
+                                                          document.getElementById("languageQuotes").innerHTML = "Là où l'esprit ne travaille pas avec la main, il n'y a pas d'art.";
+                                                      }
+                                                    }, false);
+ 
+                                            </script>
+                                        
+										<a id="menu-toggle" class="anchor-link" href="#"><img src="images/nav.png" alt="" /></a>
+										<ul class="nav-list" id="menu">
+
+   <!--MENU------------------------------------------------------------------------------------------------------------------------------->                                         
+                                            <!--border css  border:1px grey solid; -->
+											<li><a id="home" href="#"><span>Home</span></a></li>
+											<li><a href="#about" class="scroll"><span>About US</span></a></li>
+											<li><a href="#gallery" class="scroll"><span>Galleries</span></a></li>
+											<!-- logo -->
+											 <li class="logo"><a href="index.html"><img src="images/logo.png" alt=""/></a></li>
+											<!-- logo -->
+											<li><a href="#faq" class="scroll"><span>Services</span></a></li>
+            <!--href="#contact"-->			<li><a href="#find" class="scroll"><span>Contact</span></a></li>
+                                            <!-- language button-->
+											<li><a  class="scroll"><span> 
+                                        <button id="language" data-text-swap="English">Italiano</button></span></a></li>
+                                             <!-- language script-->
+                                            <script type="text/javascript">
+                                            
+                                                    var button = document.getElementById("language");
+                                                    button.addEventListener('click', function() {
+                                                      if (button.getAttribute("data-text-swap") == button.innerHTML) {
+                                                        button.innerHTML = button.getAttribute("data-text-original");
+                                            <!--English Menu-->   
+                                                    //document.getElementById("home").innerHTML = "HOME";     
+                                            <!--English About US-->
+                                                          document.getElementById("aboutUs1").innerHTML = "Dafne Art Project is an Irish provider of Art related services to businesses such as big corporations, small companies, hotels and offices.";
+                                                          document.getElementById("aboutUs2").innerHTML = "We aspire to foster the appreciation of shapes, colors and designs that can change the atmosphere of work places and urban spaces. Our portfolio boasts a range of over a hundred international artists from London, Rome, Paris, Dublin, Amsterdam and Moscow.";
+                                                          document.getElementById("aboutUs3").innerHTML = "We aim to collaborate with architects, construction firms and galleries in Europe to provide high value Art works,murales,sculptures etc to final clients.";
+                                                          document.getElementById("language").style.backgroundImage = "url('images/flags/italianIcon20_16.png')";
+                                            <!--English Quotes--> 
+                                                          document.getElementById("languageQuotes").innerHTML = "Where the spirit does not work with the hand, there is no Art.";
+                                            <!--Italian-->
+                                                      } else {
+                                                        button.setAttribute("data-text-original", button.innerHTML);
+                                                        button.innerHTML = button.getAttribute("data-text-swap");
+                                            <!--Italian Menu-->   
+                                                    //document.getElementById("home").innerHTML="INIZIO";
+                                           <!--Italian About US-->               
+                                                          document.getElementById("aboutUs1").innerHTML = "Dafne Art Project e' una societa' irlandese che fornisce servizi correlati all'arte alle imprese, piccole compagnie, uffici professionali e alberghi.";
+                                                          
+                                                          document.getElementById("aboutUs2").innerHTML = " Cio` a cui aspiriamo e`incoraggiare l'apprezzamento di nuove forme, colori e design e dimostrare come riescano a cambiare l'atmosfera nei luoghi di lavoro e negli spazi urbani. Il nostro portfolio vanta piu` di cento artisti provenienti dalle principali capitali europee: Londra, Roma, Amsterdam, Parigi, Dublino ect";
+                                                          
+                                                          document.getElementById("aboutUs3").innerHTML ="Puntiamo a collaborare con architetti, arredatori d'interni e compagnie di costruzione a cui fornire opere d'arte di alto valore, murales, sculture megalitiche ect ai loro clienti.";
+                                                        
+                                                          document.getElementById("language").style.backgroundImage = "url('images/flags/britishIcon20_16.png')";
+                                                          
+                                            <!--Italian Quotes--> 
+                                                          document.getElementById("languageQuotes").innerHTML = "Là où l'esprit ne travaille pas avec la main, il n'y a pas d'art.";
+                                                      }
+                                                    }, false);
+ 
+                                            </script>
+        <!--language script-->
+										</ul>
+									</nav>
+									<script type="text/javascript">
+										  $(document).ready(function() {
+										
+											$('#menu-toggle').click(function () {
+											  $('#menu').toggleClass('open');
+											  e.preventDefault();
+											});
+											
+										});
+									</script>
+								</div>
+							<!-- End-top-nav -->
+						</div>
+					</div>
+			</header>
+            
+    <!-- DELETE ON COMPLETION      
+            <div id="Navigation-Header">
+				<ul>
+					<li><a class="Active" href="file:///C:/Users/Zonder/Desktop/Dafne/Page1-Home.html">Home</a></li>
+					<li><a href="Page2-Fitness.html">Fitness</a></li>
+					<li><a href="Page3-Nutrition.html">Nutrition </a></li>
+					<li><a href="Page4-Articles.html">Articles</a></li>
+				</ul>
+			</div>
+
+-->  
+	<!-- about section------------------------------------------------------------------------------->			
+            <section id="about-section"  style=" border-top-style:solid; border-bottom-style:solid;"> 
+	
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+			<h2 class="w3-validation">For W3 Validation</h2>
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+	<!--Image about section-->	<!--	
+					<div class="container-fluid">  
+						<div class="row" id="about">
+							<div class="col-md-6 about_left">
+							     <a href="#" class="button-one about_btn button-type-one button-box">About Us</a>
+							</div>
+							<div class="col-md-6 about_right wow fadeInUp" data-wow-delay="0.0s"> 
+ <!--Image about section-->	                               
+								  <div class="about_text" >
+                                      <br><br><br>
+										<img src="images/tatto.png" class="img-responsive" style="float:left; margin: 35px 35px;" alt=""/>
+										<!--<h3>Here you may write a shot intorduction about yourself comapny and what you do.</h3>---> 
+                                        <br><br><br>
+										<p id="aboutUs1">Dafne Art Project is an Irish provider of Art related services to businesses such as big corporations, small companies, hotels and offices.</p>
+                                        <br>
+										<p id="aboutUs2">We aspire to foster the appreciation of shapes, colors and designs that can change the atmosphere of work places and urban spaces. Our portfolio boasts a range of over a hundred international artists from London, Rome, Paris, Dublin, Amsterdam and Moscow.</p>
+                                        <br>
+                                        <p id="aboutUs3">We aim to collaborate with architects, construction firms and galleries in Europe to provide high value Art works,murales,sculptures etc to final clients.</p>
+                                      <br> <br> <br> <br>  <br>
+								  </div>
+                <!--
+							</div>
+						</div> 
+					 
+					</div>
+-->
+            </section>
+
+
+<!--END of About Section ---------------------------------------------------------------------------------------------------------------------->				
+<!-- FIRST GALLERY ------------------------------------------------------------------------------------------------------------------------->
+            
+            <!-- 
+            <section id="gallery-one-image-section">
+                
+                <!-- About Gallery Part -->
+            
+            <!--                
+			<h2 class="w3-validation">For W3 Validation</h2>
+					<div class="container-fluid">
+					    <div class="row">
+						    <div class="gallery-one-top wow fadeInLeft" data-wow-delay="0.0s">
+								<ul class="about_gallery">
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 1 -->                   
+    <!--              
+												<img src="images/gallery-one-img1.jpg" class="gallery-one-image img-responsive" alt=""/> 
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/about-gallery/1.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming about-zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>												
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 2 -->                <!--   
+												<img src="images/gallery-one-img2.jpg" class="gallery-one-image img-responsive" alt=""/>
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/about-gallery/2.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming about-zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 3 -->                  <!--   
+												<img src="images/gallery-one-img3.jpg" class="gallery-one-image img-responsive" alt=""/> 
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+														    <a href="images/about-gallery/3.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming about-zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 4 -->                 <!--   
+												<img src="images/gallery-one-img4.jpg" class="gallery-one-image img-responsive" alt=""/>
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/about-gallery/4.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming about-zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 5 -->                 <!--   
+												<img src="images/gallery-one-img5.jpg" class="gallery-one-image img-responsive" alt=""/>
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/about-gallery/5.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 6 -->                   <!--   
+												<img src="images/gallery-one-img6.jpg" class="gallery-one-image img-responsive" alt=""/> 
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/about-gallery/6.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming about-zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+								</ul>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="gallery-one-bottom">
+								<ul class="about_gallery wow fadeInRight" data-wow-delay="0.3s">
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 7 -->                <!--   
+												<img src="images/gallery-one-img7.jpg" class="gallery-one-image img-responsive" alt=""/>
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+														<a href="images/about-gallery/7.jpg" rel="prettyPhoto[pp_gal]">
+															<button class="zooming about-zooming md-trigger">
+																	<img src="images/zoom.png" alt=""/>
+															</button>
+														</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 8 -->                <!--   
+												<img src="images/gallery-one-img8.jpg" class="gallery-one-image img-responsive" alt=""/>
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/about-gallery/8.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming about-zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 9 -->                    <!--   
+												<img src="images/gallery-one-img9.jpg" class="gallery-one-image img-responsive" alt=""/>
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/about-gallery/9.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming about-zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 10 -->                     <!--   
+												<img src="images/gallery-one-img10.jpg" class="gallery-one-image img-responsive" alt=""/>
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/about-gallery/10.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming about-zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 11 -->                    <!--   
+												<img src="images/gallery-one-img11.jpg" class="gallery-one-image img-responsive" alt=""/>
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+														<a href="images/about-gallery/11.jpg" rel="prettyPhoto[pp_gal]">
+															<button class="zooming about-zooming md-trigger">
+																	<img src="images/zoom.png" alt=""/>
+															</button>
+														</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 12 -->                <!--   
+												<img src="images/gallery-one-img12.jpg" class="gallery-one-image img-responsive" alt=""/>
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/about-gallery/12.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming about-zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+								</ul>
+								<div class="clearfix"></div>
+							</div>
+						</div>	
+					</div>
+            </section>
+<!-- END OF FIRST GALLERY --------------------------------------------------------------------------------------------------------------------->
+            
+           
+<!-- TEAM SECTION ----------------------------------------------------------------------------------------------------------------------------->   		
+			<section id="team-section"> <!-- Team Section -->
+			
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+			<h2 class="w3-validation">For W3 Validation</h2>
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+			
+				<div class="container-fluid">
+					<div class="row">
+					    <div class="team">
+							<div class='team_div'>
+								    <div class="col-md-4 team-grid-1 wow fadeInLeft" data-wow-delay="0.3s">
+									    <a href="#" class="button-one team_btn button-type-one button-box">Team</a>
+								    </div>
+							        <div class="col-md-4 team-grid-2 wow fadeInUp"  data-wow-delay="0.0s"> </div>
+									<div class="col-md-4 team-grid-3 wow fadeInRight" style="background-color:#e7e5d0" data-wow-delay="0.3s">
+											<h3>Vadim Malakhovski</h3> <!-- Team Member One -->
+											<p>Vadim is not part of the team but for the purpose of demostration he features here in this slot of a team member.</p>
+											<p>Obviously this picture will be deleted upon the completion of this project. I would love to write more but I do not have any idea of what to write. I just need some text to see how it all looks together. BTW a reminder DO NOT forget to change the links</p>
+											 <ul class="social">
+												<li><a href="https://www.facebook.com/dafneartproject/"> <i class="fb"> </i> </a></li>
+												<li><a href=""><i class="tw"> </i> </a></li>
+												<li><a href=""><i class="tumb"> </i> </a></li>
+												<li><a href=""><i class="linked"> </i> </a></li>
+												<li><a href=""><i class="pinterest"> </i> </a></li>
+												<li><a href=""><i class="google"> </i> </a></li>
+											</ul> 
+									</div>
+						            <div class="clearfix"> </div>
+						    </div>
+						</div>
+					</div>
+					<div class="row">
+					    <div class="team">
+							<div class='team_div'>
+                               
+                                <!--col-md-4 team-grid-5 team_grid1-->
+							        <div class="col-md-4 team-grid-5 team_grid3 wow fadeInRight" data-wow-delay="0.3s">
+                                        
+                                      <h1 style="color:black"><a href="http://theandiamoworld.com/">Andiamo! World </a></h1> 
+                                        <br> <br> 
+                                       <p>Our First Partner can go in here</p>
+										<p>Again just a short introduction about the partner. Need to add the link to different social media websites and make the emails deliver to the correct addresses</p>   
+                                         <br>
+                                     <ul class="social">
+											<li><a href="https://www.facebook.com/dafneartproject/"> <i class="fb"> </i> </a></li>
+											<li><a href=""><i class="tw"> </i> </a></li>
+											<li><a href=""><i class="tumb"> </i> </a></li>
+											<li><a href=""><i class="linked"> </i> </a></li>
+											<li><a href=""><i class="pinterest"> </i> </a></li>
+											<li><a href=""><i class="google"> </i> </a></li>
+										</ul> 
+									    <label class="arrow-icon1  arrow-icon1-r"> </label>
+							        </div>
+                                
+								    <div class="col-md-4 team-grid-5 team_grid1 wow fadeInLeft" style="background-color:white;" data-wow-delay="0.3s">
+                                        <div >
+                                       
+                                        <div class="partners-logo" ></div>
+                                      
+									   
+                                        </div>
+									    <h3>Roberto Scalamandre` Studio Progetti</h3> <!-- Team Member Two -->
+									    <p>Our Second Partner can go in here</p>
+										<p>Again just a short introduction about the partner. Need to add the link to different social media websites and make the emails deliver to the correct addresses</p>
+										<ul class="social">
+											<li><a href="https://www.facebook.com/dafneartproject/"> <i class="fb"> </i> </a></li>
+											<li><a href=""><i class="tw"> </i> </a></li>
+											<li><a href=""><i class="tumb"> </i> </a></li>
+											<li><a href=""><i class="linked"> </i> </a></li>
+											<li><a href=""><i class="pinterest"> </i> </a></li>
+											<li><a href=""><i class="google"> </i> </a></li>
+										</ul> 
+									    <label class="arrow-icon1  arrow-icon1-r"> </label>
+								    </div>
+                                <!--col-md-4 team-grid-5 team_grid1 -->
+								          <div class="col-md-4 team-grid-5 team_grid3   wow fadeInRight"  data-wow-delay="0.3s">
+                                        
+                                      <h1 style="color:black"><a href="http://europartnerships.co.uk/">Europartnerships Ltd</a></h1> 
+                                        <br> <br> 
+                                       <p>Our First Partner can go in here</p>
+										<p>Again just a short introduction about the partner. Need to add the link to different social media websites and make the emails deliver to the correct addresses</p>   
+                                         <br>
+                                     <ul class="social">
+											<li><a href="https://www.facebook.com/dafneartproject/"> <i class="fb"> </i> </a></li>
+											<li><a href=""><i class="tw"> </i> </a></li>
+											<li><a href=""><i class="tumb"> </i> </a></li>
+											<li><a href=""><i class="linked"> </i> </a></li>
+											<li><a href=""><i class="pinterest"> </i> </a></li>
+											<li><a href=""><i class="google"> </i> </a></li>
+										</ul> 
+									    <label class="arrow-icon1  arrow-icon1-r"> </label>
+							       
+                                
+                                         <!--
+									    <h3>Our Partners</h3>
+                                        <div class="partner1">
+                                        <div class="partners-logo"></div>
+                                        
+									    <p>Roberto Scalamandre` Studio Progetti</p>
+                                        </div>
+                                    
+                                        <div class="partner1">
+                                        <p><a href="http://theandiamoworld.com/">Andiamo! World </a></p>
+                                        </div>
+                                       <div class="partner1">
+                                        <p><a href="http://europartnerships.co.uk/">Europartnerships Ltd</a></p>
+                                        </div>
+                                       
+										<div class="newsletter-div">
+										    <form class="newsletter">
+											    <input type="text" placeholder="Insert Email" >
+											    <input type="submit" value="Submit">
+										    </form>
+										</div>
+                                            -->
+									</div>
+								<div class="clearfix"> </div>
+							</div>
+                        </div>
+					</div>
+				</div>
+			</section>
+<!--END OFTEAM SECTION -------------------------------------------------------------------------------------------------------------------------->
+
+            
+            <!-- TESTIMONIALS ----------------------------------------------------------------------------------------------------------------------------->            
+			<section id="testimonial-section"> <!-- Testimonial Section -->
+			
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+			<h2 class="w3-validation">For W3 Validation</h2>
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+			
+					 <div class="testimonial wow bounceIn" data-wow-delay="0.0s" id="faq">
+							<div class="container">
+									<div class="row">
+									    <div class="test_wrap">
+											<span class="quotes"></span><p id="languageQuotes">Where the spirit does not work with the hand, there is no Art</p><span class="quotes-down"></span>
+											<h4 style="color:white">- Leonardo Da Vinci -</h4>
+											<div class="clearfix"> </div>
+									    </div>
+									</div>
+							</div>
+                     </div>
+			</section>
+<!-- END OF TESTIMONIALS ----------------------------------------------------------------------------------------------------------------------> 
+            
+            
+<!-- TWITER/NEWS SECTION ------------------------------------------------------------------------------------------------------------------------>   <!--          
+		<section id="twitter-section"> <!-- Twitter Section -->
+			
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->  	<!-- 
+			<h2 class="w3-validation">For W3 Validation</h2>
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->  	<!-- 
+			
+			        <div class="twitter-div wow bounceInUp"  data-wow-delay="0.0s" id="find">
+						<div class="container" >
+							<div class="row">
+							    <!--<i class="tw_icon"> </i> -->  
+                               <!--<i><h1 style="color:black;">Our Partners</h1></i> -->   	<!-- 
+                              <br> <br><br> <br>
+                                        <div class="partner1 ">
+                                       
+                                        <div class="partners-logo" ></div>
+                                      
+									    <p>Roberto Scalamandre` Studio Progetti</p>
+                                        </div>
+                                
+                                        <div class="partner1" >
+                                        <p><a href="http://theandiamoworld.com/">Andiamo! World </a></p>
+                                        </div>
+                                
+                                       <div class="partner1">
+                                        <p><a href="http://europartnerships.co.uk/">Europartnerships Ltd</a></p>    
+                                        </div>
+
+							</div>
+                            <br> <br><br> <br> 
+						</div>
+                    </div>
+			</section>
+<!-- END OF TWITER/NEWS SECTION ---------------------------------------------------------------------------------------------------------------->            
+<!-- IMAGE-LINKS  GALLERY SECTION 2 ----------------------------------------------------------------------------------------------------------->            	
+			<section id="gallery-two-image-section" > <!-- Gallery Two Section -->
+			
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+			<h2 class="w3-validation">For W3 Validation</h2>
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+			
+				<div  class="container-fluidgallery wow fadeInDown" data-wow-delay="0.0s" id="gallery">
+					        <div  style="border: 5px solid grey;" class="row">
+								    <div class="gallery-title">
+									    <a href="#" class="button-one gallery_btn button-type-one button-box">Galleries</a>
+								    </div>
+									<div class="gallery-two-row-one">
+											<ul class="gallery-grid-one gallery-grid-box">
+												<li>
+													<div onclick="show('id1');" class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 1 -->
+															<img  src="images/gallery-two-img1.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+																<div class="b-animate b-from-left b-delay03 ">
+																	<a >
+                                                                   
+                                                                        <!--
+																		<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																		</button>
+
+ href="images/photo-gallery/image-1.jpg" 
+rel="prettyPhoto[pp_gal]"
+                                                                        -->
+																	</a>
+                                                                     <h3 style="color:black;"><br><br><br>Art for Companies</h3>
+																	
+																	<!--
+																	<ul class="popup_links gallery-two-popup-links">
+																		<li><button><i class="link"></i></button></li>
+																		<li><button><i class="info"></i></button></li>
+																		<li><button><i class="like"></i></button></li>
+																	</ul>
+                                                                        -->
+																</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div onclick="show('id2');" class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 2 -->
+															<img src="images/gallery-one-img5.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+																<div class="b-animate b-from-left b-delay03 ">
+																	<a  >
+                                                                  
+																		 <!--
+																		<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																		</button>
+
+href="images/photo-gallery/image-2.jpg" rel="prettyPhoto[pp_gal]"
+                                                                        -->
+																	</a>
+                                                                    <h3 style="color:black;"><br><br><br>Art for Professional Offices</h3>
+																	<!--
+																	<ul class="popup_links gallery-two-popup-links">
+																		<li><button><i class="link"></i></button></li>
+																		<li><button><i class="info"></i></button></li>
+																		<li><button><i class="like"></i></button></li>
+																	</ul>
+                                                                        -->
+																</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div  onclick="show('id3');" class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 3 -->
+															<img src="images/gallery-two-img3.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+																<div class="b-animate b-from-left b-delay03 ">
+																	<a  >
+                                                                   
+																		 <!--
+																		<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																		</button>
+
+href="images/photo-gallery/image-3.jpg" rel="prettyPhoto[pp_gal]"
+                                                                        -->
+																	</a>
+                                                                    <h3 style="color:black;"><br><br><br>Art for Public Spaces</h3>
+                                                                    <!--
+																	<ul class="popup_links gallery-two-popup-links">
+																		<li><button><i class="link"></i></button></li>
+																		<li><button><i class="info"></i></button></li>
+																		<li><button><i class="like"></i></button></li>
+																	</ul>
+                                                                        -->
+																</div>
+														</div>
+													</div>
+												</li>											
+												
+											</ul>
+											<div class="clearfix"></div>
+									</div>
+							</div>
+                    
+ <!--HIDE/DISPLAY SCRIPT-->                   
+                    
+                    <script type="text/javascript">
+function show(elementId) { 
+ document.getElementById("id1").style.display="none";
+ document.getElementById("id2").style.display="none";
+ document.getElementById("id3").style.display="none";
+ document.getElementById(elementId).style.display="block";
+}
+</script>
+
+ 
+                
+<!--1 Gallery to apper ART FOR COMPANIES--------------------------------------------------------------------->
+             
+                  
+                
+<!--END OF 1 Gallery to apper ART FOR COMPANIES --------------------------------------------------------------------->
+                
+                <!--2 Gallery to apper ART FOR PROFESSIONAL OFFICES --------------------------------------------------------------------->
+                            <!--my global div-->      
+                    <div id="id2"  style="display:none">
+                    
+							<!-- Second gallery xfirst ------------------------------------------------------------------------------------------------------------------------->
+			<h2 class="w3-validation">For W3 Validation</h2>
+					<div class="container-fluid">
+					    <div class="row">
+						    <div class="gallery-one-top wow fadeInLeft" data-wow-delay="0.0s">
+								<ul class="about_gallery">
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 1 -->
+												<img src="images/gallery-one-img1.jpg" class="gallery-one-image img-responsive" alt=""/> 
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/about-gallery/1.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming about-zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>												
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 2 -->
+												<img src="images/gallery-one-img2.jpg" class="gallery-one-image img-responsive" alt=""/>
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/about-gallery/2.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming about-zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 3 -->
+												<img src="images/gallery-one-img3.jpg" class="gallery-one-image img-responsive" alt=""/> 
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+														    <a href="images/about-gallery/3.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming about-zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 4 -->
+												<img src="images/gallery-one-img4.jpg" class="gallery-one-image img-responsive" alt=""/>
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/about-gallery/4.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming about-zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 5 -->
+												<img src="images/gallery-one-img5.jpg" class="gallery-one-image img-responsive" alt=""/>
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/about-gallery/5.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 6 -->
+												<img src="images/gallery-one-img6.jpg" class="gallery-one-image img-responsive" alt=""/> 
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/about-gallery/6.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming about-zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+								</ul>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="gallery-one-bottom">
+								<ul class="about_gallery wow fadeInRight" data-wow-delay="0.3s">
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 7 -->
+												<img src="images/gallery-one-img7.jpg" class="gallery-one-image img-responsive" alt=""/>
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+														<a href="images/about-gallery/7.jpg" rel="prettyPhoto[pp_gal]">
+															<button class="zooming about-zooming md-trigger">
+																	<img src="images/zoom.png" alt=""/>
+															</button>
+														</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 8 -->
+												<img src="images/gallery-one-img8.jpg" class="gallery-one-image img-responsive" alt=""/>
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/about-gallery/8.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming about-zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 9 -->
+												<img src="images/gallery-one-img9.jpg" class="gallery-one-image img-responsive" alt=""/>
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/about-gallery/9.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming about-zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 10 -->
+												<img src="images/gallery-one-img10.jpg" class="gallery-one-image img-responsive" alt=""/>
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/about-gallery/10.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming about-zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 11 -->
+												<img src="images/gallery-one-img11.jpg" class="gallery-one-image img-responsive" alt=""/>
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+														<a href="images/about-gallery/11.jpg" rel="prettyPhoto[pp_gal]">
+															<button class="zooming about-zooming md-trigger">
+																	<img src="images/zoom.png" alt=""/>
+															</button>
+														</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+									<li>
+										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 12 -->
+												<img src="images/gallery-one-img12.jpg" class="gallery-one-image img-responsive" alt=""/>
+												<div class="b-wrapper">
+														<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/about-gallery/12.jpg" rel="prettyPhoto[pp_gal]">
+																<button class="zooming about-zooming md-trigger">
+																		<img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+															<ul class="popup_links popup-links-button">
+																<li><button><i class="link"></i></button></li>
+																<li><button><i class="info"></i></button></li>
+																<li><button><i class="like"></i></button></li>
+															</ul>
+														</div>
+												</div>
+										</div>
+									</li>
+								</ul>
+								<div class="clearfix"></div>
+							</div>
+						</div>	
+					</div>
+                    </div>
+                    
+                </div>
+            </section>
+<!-- END OF FIRST GALLERY --------------------------------------------------------------------------------------------------------------------->
+            
+
+                    
+                    
+<!--2 Gallery to apper ART FOR COMPANIES--------------------------------------------------------------------->
+                
+                
+                
+                
+                
+     
+                
+                
+                
+                
+                
+ <!--END OF 2 Gallery to apper ART FOR COMPANIES--------------------------------------------------------------------->  
+                
+                
+                
+                
+<!--2 Gallery to apper ART FOR Public Spaces--------------------------------------------------------------------->
+                   <!--my global div-->      
+                    <div id="id3"  style="display:none">
+                    
+							<div  class="row">
+							    <div   class="col-md-12">
+								    <div class="gallery-two-row-two wow fadeInLeft">
+									    <ul    class="gallery-grid-two gallery-grid-box">
+										    <li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 4 -->
+                
+
+													    <img src="images/gallery-two-img4.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																	<a href="images/photo-gallery/image-4.jpg" rel="prettyPhoto[pp_gal]">
+																		<button class="zooming md-trigger">
+																				<img src="images/zoom.png" alt=""/>
+																		</button>
+																	</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 5 -->
+                
+													    <img src="images/gallery-two-img5.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																	<a href="images/photo-gallery/image-5.jpg" rel="prettyPhoto[pp_gal]">
+																		<button class="zooming md-trigger">
+																				<img src="images/zoom.png" alt=""/>
+																		</button>
+																	</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 6 -->
+        
+													    <img src="images/gallery-two-img6.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																	<a href="images/photo-gallery/image-6.jpg" rel="prettyPhoto[pp_gal]">
+																		<button class="zooming md-trigger">
+																				<img src="images/zoom.png" alt=""/>
+																		</button>
+																	</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 7 -->
+                    
+                
+													    <img src="images/gallery-two-img7.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-7.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 8 -->
+                    
+                 
+													    <img src="images/gallery-two-img8.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-8.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											
+											<!-- Only For Mobile -->
+                    
+                                         
+                 				<li   class="mobile-display-on">
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 9 -->
+                                                    
+                                                  
+													    <img src="images/gallery-two-img9.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-9.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<!-- Only For Mobile -->
+                    
+               
+											
+										</ul>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+               <!--gallery 2-->        
+							<div  class="row">
+								<div class="col-md-12">
+									<div class="gallery-two-row-three wow fadeInRight">
+									    <ul  class="gallery-grid-three gallery-grid-box">
+										    <li class="mobile-display-off">
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 9 -->  
+													    <img src="images/gallery-two-img9.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-9.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 10 -->
+                    
+        
+													    <img src="images/gallery-two-img10.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/photo-gallery/image-10.jpg" rel="prettyPhoto[pp_gal]">
+															    <button class="zooming md-trigger">
+																        <img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 11 -->
+                    
+                
+													    <img src="images/gallery-two-img11.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-11.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 12 -->
+                    
+                 
+													    <img src="images/gallery-two-img12.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-12.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 13 -->
+                    
+                 
+													    <img src="images/gallery-two-img13.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-13.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											
+											<!-- Only For Mobile -->
+                    
+                  
+											<li  style="display:none"  class="mobile-display-on">
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 14 -->
+                    
+                  
+													    <img src="images/gallery-two-img14.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-14.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li class="mobile-display-on">
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 15 -->
+                    
+                 
+													    <img src="images/gallery-two-img15.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-15.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<!-- Only For Mobile -->
+								
+                    
+                
+										</ul>
+										 <div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="gallery-two-row-four wow fadeInUp">
+									    <ul class="gallery-grid-four gallery-grid-box">
+										    <li class="mobile-display-off">
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 14 -->
+                    
+                  
+													    <img src="images/gallery-two-img14.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-14.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li class="mobile-display-off">
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 15 -->
+                    
+                   
+													    <img src="images/gallery-two-img15.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-15.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 16 -->
+                    
+               
+													    <img src="images/gallery-two-img16.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-16.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 17 -->
+                    
+                    
+                    
+													    <img src="images/gallery-two-img17.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-17.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 18 -->
+                    
+                    
+													    <img src="images/gallery-two-img18.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-18.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+										</ul>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="md-overlay"></div><!-- the overlay element -->
+		
+				</div>
+                    
+			
+<!--2 Gallery to apper ART FOR Public Spaces--------------------------------------------------------------------->
+            
+            
+
+                 <!--my global div-->      
+                    <div id="id1"  style="display:none">
+                    
+							<div  class="row">
+							    <div   class="col-md-12">
+								    <div class="gallery-two-row-two wow fadeInLeft">
+									    <ul    class="gallery-grid-two gallery-grid-box">
+										    <li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 4 -->
+                
+
+													    <img src="images/gallery-two-img4.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																	<a href="images/photo-gallery/image-4.jpg" rel="prettyPhoto[pp_gal]">
+																		<button class="zooming md-trigger">
+																				<img src="images/zoom.png" alt=""/>
+																		</button>
+																	</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 5 -->
+                
+													    <img src="images/gallery-two-img5.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																	<a href="images/photo-gallery/image-5.jpg" rel="prettyPhoto[pp_gal]">
+																		<button class="zooming md-trigger">
+																				<img src="images/zoom.png" alt=""/>
+																		</button>
+																	</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 6 -->
+        
+													    <img src="images/gallery-two-img6.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																	<a href="images/photo-gallery/image-6.jpg" rel="prettyPhoto[pp_gal]">
+																		<button class="zooming md-trigger">
+																				<img src="images/zoom.png" alt=""/>
+																		</button>
+																	</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 7 -->
+                    
+                
+													    <img src="images/gallery-two-img7.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-7.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 8 -->
+                    
+                 
+													    <img src="images/gallery-two-img8.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-8.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											
+											<!-- Only For Mobile -->
+                    
+                                         
+                 				<li   class="mobile-display-on">
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 9 -->
+                                                    
+                                                  
+													    <img src="images/gallery-two-img9.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-9.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<!-- Only For Mobile -->
+                    
+               
+											
+										</ul>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+               <!--gallery 2-->        
+							<div  class="row">
+								<div class="col-md-12">
+									<div class="gallery-two-row-three wow fadeInRight">
+									    <ul  class="gallery-grid-three gallery-grid-box">
+										    <li class="mobile-display-off">
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 9 -->  
+													    <img src="images/gallery-two-img9.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-9.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 10 -->
+                    
+        
+													    <img src="images/gallery-two-img10.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+															<a href="images/photo-gallery/image-10.jpg" rel="prettyPhoto[pp_gal]">
+															    <button class="zooming md-trigger">
+																        <img src="images/zoom.png" alt=""/>
+																</button>
+															</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 11 -->
+                    
+                
+													    <img src="images/gallery-two-img11.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-11.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 12 -->
+                    
+                 
+													    <img src="images/gallery-two-img12.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-12.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 13 -->
+                    
+                 
+													    <img src="images/gallery-two-img13.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-13.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											
+											<!-- Only For Mobile -->
+                    
+                  
+											<li  style="display:none"  class="mobile-display-on">
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 14 -->
+                    
+                  
+													    <img src="images/gallery-two-img14.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-14.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li class="mobile-display-on">
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 15 -->
+                    
+                 
+													    <img src="images/gallery-two-img15.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-15.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<!-- Only For Mobile -->
+								
+                    
+                
+										</ul>
+										 <div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="gallery-two-row-four wow fadeInUp">
+									    <ul class="gallery-grid-four gallery-grid-box">
+										    <li class="mobile-display-off">
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 14 -->
+                    
+                  
+													    <img src="images/gallery-two-img14.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-14.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li class="mobile-display-off">
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 15 -->
+                    
+                   
+													    <img src="images/gallery-two-img15.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-15.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 16 -->
+                    
+               
+													    <img src="images/gallery-two-img16.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-16.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 17 -->
+                    
+                    
+                    
+													    <img src="images/gallery-two-img17.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-17.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+											<li>
+												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 18 -->
+                    
+                    
+													    <img src="images/gallery-two-img18.jpg" class="gallery-two-image img-responsive" alt=""/>
+														<div class="b-wrapper">
+															<div class="b-animate b-from-left b-delay03 ">
+																<a href="images/photo-gallery/image-18.jpg" rel="prettyPhoto[pp_gal]">
+																	<button class="zooming md-trigger">
+																			<img src="images/zoom.png" alt=""/>
+																	</button>
+																</a>
+																<ul class="popup_links gallery-two-popup-links">
+																	<li><button><i class="link"></i></button></li>
+															        <li><button><i class="info"></i></button></li>
+															        <li><button><i class="like"></i></button></li>
+																</ul>
+															</div>
+														</div>
+												</div>
+										    </li>
+										</ul>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="md-overlay"></div><!-- the overlay element -->
+		
+				</div>
+                    
+                    
+
+
+                    
+<!-- CONTACT SECTION ------------------------------------------------------------------------------------------------------------------------>
+			<section id="contact-section"> <!-- Contact info Section-->
+			
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+			<h2 class="w3-validation">For W3 Validation</h2>
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+			
+			        <div class="contact"  data-wow-delay="0.0s" id="contact">
+					       	<div class="container">
+							       	<div class="col-md-7 contact-left wow fadeInLeft">
+   			                            <a href="#" class="button-one contact_btn button-type-one button-box">Contact Us</a>
+   			                            <h4>Please feel free to contact us if you require any further information</h4>
+										<div class="contact-info">
+												<ul class="contact-list-one">
+												   <li><h5>Info:</h5></li>
+												   <li>Phone : <span class="bold">000000000000000</span></li>
+												   <li>Fax : <span class="bold">00000000000000000</span></li>
+												   <li>Email 1: <a href="mailto:">elsa@dafneproject.com</a></li>
+                                                   <li>Email 2: <a href="mailto:"> anthony@dafneproject.com</a></li>
+												   <li>Address : <span class="bold">1234 Street Road, City Name</span></li>
+												</ul>
+												<ul class="contact-list-two">
+												   <li><h5>Work Hours:</h5></li>
+												   <li>Monday-Sunday : <span class="bold">Email to make an Appointment</span></li>
+                                                    <!--
+												   <li>Saturday : <span class="bold">09am - 1pm</span></li>
+												   <li>Sunday : <span class="bold">closed</span></li>
+                                                    -->
+												</ul>
+												<div class="clearfix"> </div>
+										</div>
+										<ul class="contact-social">
+											<li><a href="https://www.facebook.com/dafneartproject/"> <i class="fb"> </i> </a></li>
+											<li><a href=""><i class="tw"> </i> </a></li>
+											<li><a href=""><i class="tumb"> </i> </a></li>
+											<li><a href=""><i class="linked"> </i> </a></li>
+											<li><a href=""><i class="pinterest"> </i> </a></li>
+											<li><a href=""><i class="google"> </i> </a></li>
+										</ul>
+									</div>
+									<div class="col-md-5 wow fadeInRight">
+										<div class="contact-form">
+                                            <span class="bold">We are sorry but email function is currently unnavailable.</span>
+									<form id="my_form" onsubmit="submitForm(); return false;">
+												<input type="text" class="textbox" id="n" placeholder="Name" required>
+												<input type="text" class="textbox" id="e" placeholder="Email Address" required>
+												<textarea id="m" onfocus="this.value= '';" onblur="if (this.value == '') {this.value = 'Message';}" required>Message
+												</textarea>
+												<label class="button-two button-type-two"><p><input id="mybtn" type="submit" value="Submit Form"> <span id="status"></span></p></label>
+											</form>
+
+										</div>
+									</div>
+   	                        </div>
+                        
+					</div>
+			</section>
+<!-- END OF CONTACT SECTION -------------------------------------------------------------------------------------------------------------------->	
+<!-- MAP SECTION ------------------------------------------------------------------------------------------------------------------------------->            
+			<section id="map-section"> <!-- Map Section -->
+			
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+			<h2 class="w3-validation">For W3 Validation</h2>
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+			
+				<div class="container-fluid">
+                    
+                      			<!--SLIDESHOW-->	
+
+					<div id="slideshow" class="row">
+					    <div class="map-div wow fadeInDown">
+						    <img src="images/pro-offices-gallery/img1.jpg" alt="" />
+						</div>
+                      <!--  
+                        <div class="map-div wow fadeInDown">
+						    <img src="images/pro-offices-gallery/img2.jpg" alt="" />
+						</div>
+                        
+                         <div class="map-div wow ">
+						    <img src="images/pro-offices-gallery/img3.jpg" alt="" />
+						</div>
+                        
+                        <div class="map-div wow ">
+						    <img src="images/pro-offices-gallery/img4.jpg" alt="" />
+						</div>
+                        
+                       <div class="map-div wow ">
+						    <img src="images/pro-offices-gallery/img5.jpg" alt="" />
+						</div>
+                        
+                         <div class="map-div wow ">
+						    <img src="images/pro-offices-gallery/img7.jpg" alt="" />
+						</div>
+                        
+                         <div class="map-div wow ">
+						    <img src="images/pro-offices-gallery/img8.jpg" alt="" />
+						</div>
+                -->
+                        
+					</div>
+				</div>
+			</section>
+            
+                                    
+
+<!-- END OF MAP SECTION ----------------------------------------------------------------------------------------------------------------------->            
+<!-- FOOTER SECTION ---------------------------------------------------------------------------------------------------------------------------->            
+			
+			<section id="footer-section"> <!-- Footer Section -->
+			
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+			<h2 class="w3-validation">For W3 Validation</h2>
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+			
+				<div class="container">
+					<div class="row">
+					    <nav class="footer-nav">
+						    <ul class="nav-list wow fadeInDown" id="footer-menu">
+							    <li><a href="#">Home</a></li>
+								<li><a href="#about" class="scroll">About</a></li>
+								<li><a href="#gallery" class="scroll">Gallery</a></li>
+								<!-- logo -->
+								<li class="logo"><a href="index.html"><img src="images/logo.png" alt=""/></a></li>
+								<!-- logo -->
+								<li><a href="#faq" >Faq</a></li>
+								<li><a href="#find" >Find Us</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+						<p class="copyright wow fadeInUp">&copy; 2017 Dafne Art Project. All Rights Reserved. Developed by <a href="https://www.linkedin.com/in/vadim-malakhovski/">Vadim Malakhovski</a> based on the template provided by <a href="http://theuncreativelab.com">Uncreative Lab</a> and <a href="http://www.themezy.com">Themezy.com</a>.</p>
+					</div>
+				</div>
+			</section>
+			
+			
+			<script type="text/javascript" charset="utf-8">
+			  $(document).ready(function(){
+				$("a[rel^='prettyPhoto']").prettyPhoto();
+			  });
+			</script>
+			
+
+			
+			<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+			</script>
+			
+			<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+		</body>
+</html>		

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="HomePageJS&CSS/Base.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="HomePageJS&CSS/FNJavaScript.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#util-SignIn").click(function(){
+				$("#Login-Header-Hide").toggle();
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#util-SignUp").click(function(){
+				$("#Registration-Section").toggle();
+			});
+		});
+	</script>
+	
+	<!-- JQuery for SLIDESHOW-->	
+	<script>
+$(document).ready(function(){
+  $("#slideshow > div:gt(0)").hide();
+  setInterval(function() {
+    $("#slideshow > div:first")
+      .fadeOut(1000)
+      .next()
+      .fadeIn(1000)
+      .end()
+      .appendTo("#slideshow");
+  },3000);
+});
+	</script>
+	
+    <title>F&N Plus Home</title>
+  </head>
+  <body>
+  
+	<!--<div id="BackGroundContainer">-->
+	<!-- Overlaying images has to be in the same div-->
+	<!-- CONTAINER DIV-->
+  <!--BACKGROUND IMAGE --->                      
+    <img src="http://wallpapers-hd-wide.com/wp-content/uploads/2016/01/gray-vertical-lines-texture-1920x1080.jpg" alt='[]' class="under" />
+	 
+	<div id="Container">
+			<div id="Logo-Search-Header">
+				<img src="HomePageJS&CSS/Logo.png" alt= "F and N Plus Logo" height="70" width="165">
+				<input type="text" name="search" placeholder="Search...">
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+			</div>
+		
+			<div id="Navigation-Header">
+				<ul>
+					<li><a class="Active" href="Page1-Home.html">Home</a></li>
+					<li><a href="Page2-Fitness.html">Fitness</a></li>
+					<li><a href="Page3-Nutrition.html">Nutrition </a></li>
+					<li><a href="Page4-Articles.html">Articles</a></li>
+				</ul>
+			</div>
+			
+			<div id="Utilities-Header">
+					<a id="util-SignIn"href="#">Sign-In </a>
+				<br>
+					<a id="util-SignUp"href="#">Sign-Up </a>
+				<br>
+					<a id="util-Forget"href="#">Forgot user name or password? </a>
+			</div>
+			
+			<div id="Login-Header-Hide">
+				<form class="register" name="loginForm">
+					<input type="email" name="email" placeholder="Email Address">
+					<input type="password" name="password" placeholder="Password">
+					<button onclick="validate()">Log In</button>
+				</form>
+		
+			</div>
+			
+			<div id="Registration-Section">
+				<form name="Membership-Registration">
+					<fieldset>
+					<legend>Registration</legend>
+					<legend>Personal information:</legend>
+					<br>
+						First name:<br>
+						<input type="text" name="firstname" value="">
+						<br>
+						Last name:
+						<br>
+						<input type="text" name="lastname" value="">
+						<br>
+						<br>
+						Gender:
+						<br>
+						<br>
+						<input type="radio" name="male" value="male">Male
+						<br>
+						<input type="radio" name="female" value="female">Female
+						<br>
+						<br>
+						Email Adress:
+						<br>
+						<input type="email" name="email" placeholder="Email Address...">
+						<br>
+						Password:
+						<br>
+						<input type="password" name="password" placeholder="Password">
+						<br>
+						Confirm Passord:
+						<br>
+						<input type="password" name="password" placeholder="Password">
+						<br>
+						<br>
+					<legend>Select Your Membership Type:</legend>
+						<select id="Membership-Options">
+							<option value="volvo">Platinum</option>
+							<option value="saab">Gold</option>
+							<option value="opel">Silver</option>
+						</select>
+						<br>
+						<br>
+						
+					<legend>Payment Method</legend>
+							<br>
+							Pay With:
+							<br>
+							
+							PayPal
+							<input type="radio" name="PayPal" onchange="paymentMethodConfirm()">
+							<br>
+							<div id="PaypalWarningPanel">
+								Please note that there will be monthly deductions of your membership fee from your paypal account.
+							</div>
+							Credit Card:
+							<input type="radio" name="PayPal" onchange="paymentMethodConfirm()">
+							<div id="CreditCardWarningPanel">
+								Please note that there will be monthly deductions of your membership fee from your paypal account.
+							</div>
+
+							<div id="TermsAndConditionAcceptance">
+							I confirm that I have read and accepted the terms and conditions of F&N Plus Ltd.
+							<input type="checkbox" name="yes" onclick="termsAndConditins()" value="">Yes <input type="checkbox" name="no" value="">No
+							<br>
+							<br>
+							<button onclick="validate()">Submit</button>
+							</div>
+					</fieldset>
+				</form>
+			</div>
+			
+			
+			<div id="Content">
+		
+			<img src="http://wallpapers-hd-wide.com/wp-content/uploads/2016/01/gray-vertical-lines-texture-1920x1080.jpg" style="width:100%" height="1000;" alt="[]" class="under" />
+	
+  <a  href="buzz.html" title="Exercise Tutorials"><img src="https://thumb9.shutterstock.com/display_pic_with_logo/83939/222793756/stock-photo-body-builder-working-out-at-gym-222793756.jpg" class="link-image1 link-image-size fade " /></a>
+
+  <!-- </a> -->
+
+  <a  href="buzz.html" title="Best of Diets and Nutrition Tips"> <img src="https://wallpaperscraft.com/image/dumbbells_smoothies_raspberry_sports_nutrition_103242_750x1334.jpg" class="link-image2 link-image-size fade " /> </a>
+  
+  <a  href="buzz.html" title="Articles"><img src="https://t3.ftcdn.net/jpg/01/18/05/50/240_F_118055056_0mPczEowEfxxQX8ePGUcPWG3Ahv4V5DM.jpg" class="link-image3 link-image-size fade" /> </a>
+  
+  <img src="http://deucepictures.com/deuce%20site%20pics/photo%20assets/project%20titles/Europa_runner.jpg"  class="link-image4 link-image-size1 " /> 
+ <!--     https://www.freelapusa.com/wp-content/uploads/2014/06/Box-Jumps.jpg-->
+ <div class="textPosition" >
+   <p> 
+  <h2 class="text1">
+  Internet has all<br>
+  the information<br>
+  regarding sport<br> 
+  and nutrition<br> 
+  and the best of it<br> 
+  you will find here.<br>
+  All of it was selected <br> 
+  from internet by a team <br>
+  of qualified professionals. <br> 
+  Your desires = our goals.<br>
+  _________"Fitnes & Nutrition Plus"</h2>
+  </P>
+
+  </div>
+  			<!--SLIDESHOW-->	
+<div id="slideshow">
+   <div>
+     <img src="http://www.hdwallpapersnews.com/wp-content/uploads/2015/03/Men-Fitness-High-Definition-Wallpapers-1080p-660x330.jpg" class='slideshow-image-size'>
+   </div>
+   <div>
+     <img src="http://www.crossfitdirectory.it/wordpress/wp-content/uploads/2016/03/cosa-indossare-per-fare-crossfit.jpg"  class='slideshow-image-size'>
+   </div>
+      <div>
+     <img src="http://www.hdwallpapersnews.com/wp-content/uploads/2015/03/Men-Fitness-HD-Wallpapers-1920x1080.jpg" class='slideshow-image-size'>
+   </div>
+      <div>
+     <img src="http://www.hdwallpapersnews.com/wp-content/uploads/2015/03/Men-Fitness-HD-Images-1024x576.jpg"  class='slideshow-image-size'>
+   </div>
+      <div>
+     <img src="http://www.crossfitdirectory.it/wordpress/wp-content/uploads/2016/03/condizionamento-metabolico-nel-CrossFit.jpg" class='slideshow-image-size'>
+   </div>
+      <div>
+     <img src="https://images.alphacoders.com/624/thumb-1920-624338.jpg" class='slideshow-image-size'>
+   </div>
+</div>
+  
+  <!--Just to cover one the bottom of one image-->
+  <div id="rectangle"></div>
+  
+			</div>
+			
+			<div id="Footer">
+				<div class="Navigation-Tab-Footer">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Fitness </a></li>
+						<li><a href="#">Nutrition</a></li>
+						<li><a href="#">Articles</a></li>
+					</ul>
+				</div>
+				
+				<div class="Social-Media-Footer">
+					<ul>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Press</a></li>
+					</ul>
+				</div>
+				<div class="Legal-And-Utilities-Footer">
+					<ul>
+						<li><a href="#"> Terms and Conditions</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+			
+				</div>
+			
+		
+		</div>
+	</div>	
+  </body>
+</html>
