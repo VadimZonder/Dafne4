@@ -82,15 +82,20 @@ button {
       width: auto ;
   max-width: 100% ;
   height: auto ;
-    position:relative;
-    /*
-     
-     top:-5px;
-     right:0;
-     margin-top: 10px;
-     margin-right:32px;
+    position:absolute;
+ 
+ 
+/*
+   bottom:120px;
+    left:350px;
     */
     
+    margin-left: 100px;
+    margin-top: -50px;
+    
+     
+  
+   
     padding: 10px 5px 5px 34px;
     /*font-family: Arial, Verdana;   */
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
@@ -110,6 +115,7 @@ button {
 	background-position: center;
 	position: relative;
 	min-height:500px;
+ 
     /*border-bottom-style: solid;*/
 }
 
@@ -140,7 +146,7 @@ button {
 /*------start-top-nav------*/
 .top-nav {
 	position:relative;
-	margin-top: 1.0em;
+	margin-top: 2.0em;
  
 }
 .nav { width:100%;}
@@ -156,7 +162,7 @@ ul.nav-list li a {
 	        text-decoration: none; 
 			text-transform: uppercase;
 	        color:#000;
-	        font-size:22px;
+	        font-size:18px;
     font-family: 'Roboto', sans-serif;
 	        -webkit-transition: all 0.5s ease;
 			-moz-transition: all 0.5s ease;
@@ -515,7 +521,7 @@ i.like{
     margin-top: 6%;
     text-transform: uppercase;
 }
-/*--team--*/
+/*-___________________________________________________________________________________-team--*/
 #team-section {
     display: block;
 	overflow: hidden;
@@ -590,7 +596,8 @@ line-height: 90px;
 .partners-logo {
   	width: 135px;
 	height: 140px;
-    margin-left:30px;
+    margin-left:20px;
+    margin-top:-40px;
    
     
 	display: block;
@@ -598,6 +605,7 @@ line-height: 90px;
     background-size: cover;
 	background-position: center;
     float:right;
+    
     
 }
 .container-partner{
