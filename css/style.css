@@ -823,22 +823,22 @@ i.tw_icon{
     background-color: #afac9c;
     display: block;
     float: left;
-    min-height: 270px;
+    min-height: 350px;
     overflow: hidden;
     text-align: center;
-    width: 40%;
+    width: 20%;
 }
 .gallery_btn {
 	position: relative;
 	z-index: 1;
-	margin-top: 75px;
+	margin-top: 135px;
 }
 .gallery-two-row-one {
     padding: 0;
     display: block;
     overflow: hidden;
-    width: 60%;
-	min-height: 270px;
+    width: 80%;
+	min-height: 350px;
     
 }
 .gallery-two-row-two{
