@@ -27,7 +27,7 @@ else                /* send the submitted data */
     else{		
 	    $from="From: $name<$email>\r\nReturn-path: $email";
         $subject="Message sent using your contact form";
-		// mail("youremail@yoursite.com", $subject, $message, $from);
+		mail("3901fcb7910a0616b875@cloudmailin.net", $subject, $message, $from);
 		echo "Email sent!";
 	    }
     }  
