@@ -124,7 +124,7 @@ $(document).ready(function(){
                                                           document.getElementById("aboutUs1").innerHTML = "Dafne Art Project is an Irish provider of Art related services to businesses such as big corporations, small companies, hotels and offices.";
                                                           document.getElementById("aboutUs2").innerHTML = "We aspire to foster the appreciation of shapes, colors and designs that can change the atmosphere of work places and urban spaces. Our portfolio boasts a range of over a hundred international artists from London, Rome, Paris, Dublin, Amsterdam and Moscow.";
                                                           document.getElementById("aboutUs3").innerHTML = "We aim to collaborate with architects, construction firms and galleries in Europe to provide high value Art works,murales,sculptures etc to final clients.";
-                                                          document.getElementById("language").style.backgroundImage = "url('images/flags/italianIcon20_16.png')";
+                                                          document.getElementById("language").style.backgroundImage = "url('images/flags/frenchIcon20_16.png')";
                                             <!--English Quotes--> 
                                                           document.getElementById("languageQuotes").innerHTML = "Where the spirit does not work with the hand, there is no Art.";
                                             <!--Italian-->
@@ -154,17 +154,17 @@ $(document).ready(function(){
 
    <!--MENU------------------------------------------------------------------------------------------------------------------------------->                                         
                                             <!--border css  border:1px grey solid; -->
-											<li><a id="home" href="#"><span>Home</span></a></li>
+											 <!-- <li><a id="home" href="#"><span>Home</span></a></li> -->
 											<li><a href="#about" class="scroll"><span>About US</span></a></li>
-											<li><a href="#gallery" class="scroll"><span>Services</span></a></li>
+											<li><a href="#team" class="scroll"><span>Team</span></a></li>
 											<!-- logo -->
 											 <li class="logo"><a href="index.html"><img src="images/logo.png" alt=""/></a></li>
 											<!-- logo -->
-											<li><a href="#services" class="scroll"><span>Galleries</span></a></li>
+											<li><a href="#gallery" class="scroll"><span>Services</span></a></li>
             <!--href="#contact"-->			<li><a href="#contact" class="scroll"><span>Contact</span></a></li>
                                             <!-- language button-->
 											<li><a  class="scroll">
-                                        <button id="language" data-text-swap="English">Italiano</button></a></li>
+                                        <button id="language" data-text-swap="English">Français</button></a></li>
                                              <!-- language script-->
                                             <script type="text/javascript">
                                             
@@ -178,7 +178,7 @@ $(document).ready(function(){
                                                           document.getElementById("aboutUs1").innerHTML = "Dafne Art Project is an Irish provider of Art related services to businesses such as big corporations, small companies, hotels and offices.";
                                                           document.getElementById("aboutUs2").innerHTML = "We aspire to foster the appreciation of shapes, colors and designs that can change the atmosphere of work places and urban spaces. Our portfolio boasts a range of over a hundred international artists from London, Rome, Paris, Dublin, Amsterdam and Moscow.";
                                                           document.getElementById("aboutUs3").innerHTML = "We aim to collaborate with architects, construction firms and galleries in Europe to provide high value Art works,murales,sculptures etc to final clients.";
-                                                          document.getElementById("language").style.backgroundImage = "url('images/flags/italianIcon20_16.png')";
+                                                          document.getElementById("language").style.backgroundImage = "url('images/flags/frenchIcon20_16.png')";
                                             <!--English Quotes--> 
                                                           document.getElementById("languageQuotes").innerHTML = "Where the spirit does not work with the hand, there is no Art.";
                                             <!--Italian-->
@@ -221,17 +221,7 @@ $(document).ready(function(){
 					</div>
 			</header>
             
-    <!-- DELETE ON COMPLETION      
-            <div id="Navigation-Header">
-				<ul>
-					<li><a class="Active" href="file:///C:/Users/Zonder/Desktop/Dafne/Page1-Home.html">Home</a></li>
-					<li><a href="Page2-Fitness.html">Fitness</a></li>
-					<li><a href="Page3-Nutrition.html">Nutrition </a></li>
-					<li><a href="Page4-Articles.html">Articles</a></li>
-				</ul>
-			</div>
 
--->  
 	<!-- about section------------------------------------------------------------------------------->			
             <section id="about-section"  style=" border-top-style:solid; border-bottom-style:solid;"> 
 	
@@ -246,10 +236,11 @@ $(document).ready(function(){
 							</div>
 							<div class="col-md-6 about_right wow fadeInUp" data-wow-delay="0.0s"> 
  <!--Image about section-->	                               
-								  <div class="about_text" >
+								  <div class="about_text" id="about">
                                        
-                                      <br><br><br>
-										<img src="images/tatto.jpg" class="img-responsive" style="float:left; margin: 35px 35px;" alt=""/>
+                                      <br>
+										<img src="images/tatto.jpg" class="img-responsive" style="float:left; " alt=""/>
+                                      <img src="images/tatto.jpg" class="img-responsive" style="float:right;" alt=""/>
 										<!--<h3>Here you may write a shot intorduction about yourself comapny and what you do.</h3>---> 
                                         <br><br>
 										<p id="aboutUs1">Dafne Art Project is an Irish provider of Art related services to businesses such as big corporations, small companies, hotels and offices.</p>
@@ -257,7 +248,8 @@ $(document).ready(function(){
 										<p id="aboutUs2">We aspire to foster the appreciation of shapes, colors and designs that can change the atmosphere of work places and urban spaces. Our portfolio boasts a range of over a hundred international artists from London, Rome, Paris, Dublin, Amsterdam and Moscow.</p>
                                         <br>
                                         <p id="aboutUs3">We aim to collaborate with architects, construction firms and galleries in Europe to provide high value Art works,murales,sculptures etc to final clients.</p>
-                                      <br> <br> <br> <br>  <br>
+                                      <br> <br> <br>
+    
 								  </div>
                 <!--
 							</div>
@@ -536,13 +528,13 @@ $(document).ready(function(){
 			
 				<div class="container-fluid">
 					<div class="row">
-					    <div class="team">
+					    <div class="team"   id="team">
 							<div class='team_div'>
 								    <div class="col-md-4 team-grid-1 wow fadeInLeft" data-wow-delay="0.3s">
 									    <a href="#" class="button-one team_btn button-type-one button-box">Team</a>
 								    </div>
-							        <div class="col-md-4 team-grid-2 wow fadeInUp"  data-wow-delay="0.0s"> </div>
-									<div class="col-md-4 team-grid-3 wow fadeInRight" style="background-color:#e7e5d0" data-wow-delay="0.3s">
+							        
+									<div class="col-md-4 team-grid-3 wow fadeInRight" style="background-color:#e7e5d0" data-wow-delay="0.3s" 	style="background-color:#A89586">
 											<h3>Vadim Malakhovski</h3> <!-- Team Member One -->
 											<p>Vadim is not part of the team but for the purpose of demostration he features here in this slot of a team member.</p>
 											<p>Obviously this picture will be deleted upon the completion of this project. I would love to write more but I do not have any idea of what to write. I just need some text to see how it all looks together. BTW a reminder DO NOT forget to change the links</p>
@@ -555,7 +547,10 @@ $(document).ready(function(){
 												<li><a href=""><i class="google"> </i> </a></li>
 											</ul> 
 									</div>
+                                <div class="col-md-4 team-grid-2 wow fadeInUp"  data-wow-delay="0.0s"> </div>
 						            <div class="clearfix"> </div>
+                                
+                                
 						    </div>
 						</div>
 					</div>
@@ -564,60 +559,35 @@ $(document).ready(function(){
 							<div class='team_div'>
                                
                                 <!--col-md-4 team-grid-5 team_grid1-->
-							        <div class="col-md-4 team-grid-5 team_grid3 wow fadeInRight" data-wow-delay="0.3s">
-                                        
-                                      <h1 style="color:black"><a href="http://theandiamoworld.com/">Andiamo! World </a></h1> 
-                                        <br> <br> 
-                                       <p>Our First Partner can go in here</p>
-										<p>Again just a short introduction about the partner. Need to add the link to different social media websites and make the emails deliver to the correct addresses</p>   
-                                         <br>
-                                     <ul class="social">
-											<li><a href="https://www.facebook.com/dafneartproject/"> <i class="fb"> </i> </a></li>
-											<li><a href=""><i class="tw"> </i> </a></li>
-											<li><a href=""><i class="tumb"> </i> </a></li>
-											<li><a href=""><i class="linked"> </i> </a></li>
-											<li><a href=""><i class="pinterest"> </i> </a></li>
-											<li><a href=""><i class="google"> </i> </a></li>
-										</ul> 
+							        <div class="col-md-4 team-grid-5 team_grid3 wow fadeInRight" data-wow-delay="0.3s" style="background-color:#29653C;">
+                                     <h3>Vadim Malakhovski</h3> <!-- Team Member One -->
+											<p>Vadim is not part of the team but for the purpose of demostration he features here in this slot of a team member.</p>
+											<p>Obviously this picture will be deleted upon the completion of this project. I would love to write more but I do not have any idea of what to write. I just need some text to see how it all looks together. BTW a reminder DO NOT forget to change the links</p>
+											 <ul class="social">
+												<li><a href="https://www.facebook.com/dafneartproject/"> <i class="fb"> </i> </a></li>
+												<li><a href=""><i class="tw"> </i> </a></li>
+												<li><a href=""><i class="tumb"> </i> </a></li>
+												<li><a href=""><i class="linked"> </i> </a></li>
+												<li><a href=""><i class="pinterest"> </i> </a></li>
+												<li><a href=""><i class="google"> </i> </a></li>
+											</ul> 
 									    <label class="arrow-icon1  arrow-icon1-r"> </label>
 							        </div>
                                 
-								    <div class="col-md-4 team-grid-5 team_grid1 wow fadeInLeft" style="background-color:white;" data-wow-delay="0.3s">
-                                        <div >
-                                       
-                                        <div class="partners-logo" ></div>
-                                      
-									   
-                                        </div>
-									    <h3>Roberto Scalamandre` Studio Progetti</h3> <!-- Team Member Two -->
-									    <p>Our Second Partner can go in here</p>
-										<p>Again just a short introduction about the partner. Need to add the link to different social media websites and make the emails deliver to the correct addresses</p>
-										<ul class="social">
-											<li><a href="https://www.facebook.com/dafneartproject/"> <i class="fb"> </i> </a></li>
-											<li><a href=""><i class="tw"> </i> </a></li>
-											<li><a href=""><i class="tumb"> </i> </a></li>
-											<li><a href=""><i class="linked"> </i> </a></li>
-											<li><a href=""><i class="pinterest"> </i> </a></li>
-											<li><a href=""><i class="google"> </i> </a></li>
-										</ul> 
-									    <label class="arrow-icon1  arrow-icon1-r"> </label>
-								    </div>
+                                
+                                <!--2nd picture -->
+								    <div class="col-md-4 team-grid-2 wow fadeInUp"  data-wow-delay="0.0s"> </div>
+                                  <!--2nd picture -->
+                                
                                 <!--col-md-4 team-grid-5 team_grid1 -->
-								          <div class="col-md-4 team-grid-5 team_grid3   wow fadeInRight"  data-wow-delay="0.3s">
+								          <div class="col-md-4 team-grid-5 team-grid3   wow fadeInRight"  data-wow-delay="0.3s" style="background-color:#B64825;">
                                         
-                                      <h1 style="color:black"><a href="http://europartnerships.co.uk/">Europartnerships Ltd</a></h1> 
+                                      <h1 style="color:black">Our Partners</h1> 
                                         <br> <br> 
-                                       <p>Our Third Partner can go in here</p>
-										<p>Again just a short introduction about the partner. Need to add the link to different social media websites and make the emails deliver to the correct addresses</p>   
+                                       <p>Our Partners page is still under construction. Once completed you will be able to see the list of all of our partners</p>
+										<p></p>   
                                          <br>
-                                     <ul class="social">
-											<li><a href="https://www.facebook.com/dafneartproject/"> <i class="fb"> </i> </a></li>
-											<li><a href=""><i class="tw"> </i> </a></li>
-											<li><a href=""><i class="tumb"> </i> </a></li>
-											<li><a href=""><i class="linked"> </i> </a></li>
-											<li><a href=""><i class="pinterest"> </i> </a></li>
-											<li><a href=""><i class="google"> </i> </a></li>
-										</ul> 
+      
 									    <label class="arrow-icon1  arrow-icon1-r"> </label>
 							       
                                 
@@ -648,6 +618,83 @@ $(document).ready(function(){
 							</div>
                         </div>
 					</div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+               <!--  
+                    
+                    	<div class="row">
+					    <div class="team">
+							<div class='team_div'>
+                               
+                                <!--col-md-4 team-grid-5 team_grid1-->  <!--
+							        <div class="col-md-4 team-grid-5 team_grid3 wow fadeInRight" data-wow-delay="0.3s">
+                                        
+                                      <h1 style="color:black"><a href="http://theandiamoworld.com/">Andiamo! World </a></h1> 
+                                        <br> <br> 
+                                       <p>Our First Partner can go in here</p>
+										<p>Again just a short introduction about the partner. Need to add the link to different social media websites and make the emails deliver to the correct addresses</p>   
+                                         <br>
+                                     <ul class="social">
+											<li><a href="https://www.facebook.com/dafneartproject/"> <i class="fb"> </i> </a></li>
+											<li><a href=""><i class="tw"> </i> </a></li>
+											<li><a href=""><i class="tumb"> </i> </a></li>
+											<li><a href=""><i class="linked"> </i> </a></li>
+											<li><a href=""><i class="pinterest"> </i> </a></li>
+											<li><a href=""><i class="google"> </i> </a></li>
+										</ul> 
+									    <label class="arrow-icon1  arrow-icon1-r"> </label>
+							        </div>
+                                
+								    <div class="col-md-4 team-grid-5 team_grid1 wow fadeInLeft" style="background-color:white;" data-wow-delay="0.3s">
+                                        <div >
+                                       
+                                        <div class="partners-logo" ></div>
+                                      
+									   
+                                        </div>
+									    <h3>Roberto Scalamandre` Studio Progetti</h3> <!-- Team Member Two -->          <!--
+									    <p>Our Second Partner can go in here</p>
+										<p>Again just a short introduction about the partner. Need to add the link to different social media websites and make the emails deliver to the correct addresses</p>
+										<ul class="social">
+											<li><a href="https://www.facebook.com/dafneartproject/"> <i class="fb"> </i> </a></li>
+											<li><a href=""><i class="tw"> </i> </a></li>
+											<li><a href=""><i class="tumb"> </i> </a></li>
+											<li><a href=""><i class="linked"> </i> </a></li>
+											<li><a href=""><i class="pinterest"> </i> </a></li>
+											<li><a href=""><i class="google"> </i> </a></li>
+										</ul> 
+									    <label class="arrow-icon1  arrow-icon1-r"> </label>
+								    </div>
+                                <!--col-md-4 team-grid-5 team_grid1 -->                                                                  <!--
+								          <div class="col-md-4 team-grid-5 team_grid3   wow fadeInRight"  data-wow-delay="0.3s">
+                                        
+                                      <h1 style="color:black"><a href="http://europartnerships.co.uk/">Europartnerships Ltd</a></h1> 
+                                        <br> <br> 
+                                       <p>Our Third Partner can go in here</p>
+										<p>Again just a short introduction about the partner. Need to add the link to different social media websites and make the emails deliver to the correct addresses</p>   
+                                         <br>
+                                     <ul class="social">
+											<li><a href="https://www.facebook.com/dafneartproject/"> <i class="fb"> </i> </a></li>
+											<li><a href=""><i class="tw"> </i> </a></li>
+											<li><a href=""><i class="tumb"> </i> </a></li>
+											<li><a href=""><i class="linked"> </i> </a></li>
+											<li><a href=""><i class="pinterest"> </i> </a></li>
+											<li><a href=""><i class="google"> </i> </a></li>
+										</ul> 
+									    <label class="arrow-icon1  arrow-icon1-r"> </label>
+
+									</div>
+								<div class="clearfix"> </div>
+							</div>
+                        </div>
+					</div>
+        -->  
 				</div>
 			</section>
 <!--END OFTEAM SECTION -------------------------------------------------------------------------------------------------------------------------->
@@ -2088,15 +2135,14 @@ function show(elementId) {
 					<div class="row">
 					    <nav class="footer-nav">
 						    <ul class="nav-list wow fadeInDown" id="footer-menu">
-							    <li><a href="#">Home</a></li>
-								<li><a href="#about" class="scroll">About</a></li>
-								<li><a href="#gallery" class="scroll">Gallery</a></li>
-								<!-- logo -->
-								<li class="logo"><a href="index.html"><img src="images/logo.png" alt=""/></a></li>
-								<!-- logo -->
-								<li><a href="#faq" >Faq</a></li>
-								<li><a href="#find" >Find Us</a></li>
-								<li><a href="#contact">Contact</a></li>
+                                           <!-- <li><a id="home" href="#"><span>Home</span></a></li> -->
+											<li><a href="#about" class="scroll"><span>About US</span></a></li>
+											<li><a href="#team" class="scroll"><span>Team</span></a></li>
+											<!-- logo -->
+											 <li class="logo"><a href="index.html"><img src="images/logo.png" alt=""/></a></li>
+											<!-- logo -->
+											<li><a href="#gallery" class="scroll"><span>Services</span></a></li>
+            <!--href="#contact"-->			<li><a href="#contact" class="scroll"><span>Contact</span></a></li>
 							</ul>
 						</nav>
 						<p class="copyright wow fadeInUp">&copy; 2017 Dafne Art Project. All Rights Reserved. Developed by <a href="https://www.linkedin.com/in/vadim-malakhovski/">Vadim Malakhovski</a> based on the template provided by <a href="http://theuncreativelab.com">Uncreative Lab</a> and <a href="http://www.themezy.com">Themezy.com</a>.</p>
