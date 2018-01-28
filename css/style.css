@@ -5,7 +5,8 @@ ul, ol {margin: 0;
 /*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/}
 p {margin: 0;}
 html, body{
-    font-family: 'Roboto', sans-serif;
+    font-family: Garamond,sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
     /*font-family: 'Montserrat', sans-serif;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;*/ 
 /* font-family: 'Noticia Text', serif;*/
@@ -54,7 +55,8 @@ button {
 
 .button-one {
 	border: none;
-	font-family: 'Montserrat', sans-serif;
+    font-family: Garamond,sans-serif;
+	/*font-family: 'Montserrat', sans-serif;*/
 	font-size: inherit;
 	color: inherit;
     cursor: pointer;
@@ -98,8 +100,9 @@ button {
   
    
     padding: 10px 5px 5px 34px;
+    font-family: Garamond,sans-serif;
     /*font-family: Arial, Verdana;   */
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    /*font-family: Helvetica Neue,Helvetica,Arial,sans-serif; */
     background: url(../images/flags/frenchIcon20_16.png);
     background-position: 10px 14px;
     background-repeat: no-repeat;
@@ -168,7 +171,8 @@ ul.nav-list li a {
 			text-transform: uppercase;
 	        color:#000;
 	        font-size:18px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Garamond,sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
 	        -webkit-transition: all 0.5s ease;
 			-moz-transition: all 0.5s ease;
 			-o-transition: all 0.5s ease;
@@ -268,10 +272,10 @@ ul.nav-list li a:hover { color:#333333; border-bottom: 3px solid #000000; paddin
     display: block;
     margin: 0 auto;
     overflow: hidden;
-    width: 80%;
+    width: 90%;
 }
 .about_text img {
-    margin: 90px auto 0;
+    margin: 10px auto 0;
 }
 .about_text img:hover{
 	transform: rotateY(360deg);
@@ -504,7 +508,8 @@ i.like{
      font-style: italic;*/
     font-size: 30px;
     font-style: italic;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Garamond,sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
     line-height: 32px;
     margin-top: 135px;
     text-align: center;
@@ -875,7 +880,7 @@ i.tw_icon{
 	height: 100%;
 	display: block;
 	overflow: hidden;
-     border: 3px solid silver;
+     border: 2px solid silver;
     /*border: 3px solid white;*/
 }
 ul.gallery-grid-box {
