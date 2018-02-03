@@ -77,7 +77,7 @@ button {
 }
 .button-type-one {
     color: black;
-    font-size: 45px;
+    font-size: 35px;
 }
 
 
@@ -99,12 +99,12 @@ button {
      
   
    
-    padding: 10px 5px 5px 34px;
+    padding: 10px 15px 15px 44px;
     font-family: Garamond,sans-serif;
     /*font-family: Arial, Verdana;   */
     /*font-family: Helvetica Neue,Helvetica,Arial,sans-serif; */
     background: url(../images/flags/frenchIcon20_16.png);
-    background-position: 10px 14px;
+    background-position: 10px 10px;
     background-repeat: no-repeat;
  
 }
@@ -462,7 +462,7 @@ i.like{
 	height: 30px;
 	display: inline-block;
 }
-/*--testmonial----------------------------------------------------------------------testmonial/Quotes--*/
+/*--testmonial-------------------------------------------------------------------------------------------------testmonial/Quotes--*/
 #testimonial-section {
     display: block;
 	overflow: hidden;
@@ -483,20 +483,20 @@ i.like{
 }
 .testimonial span.quotes {
 	position: absolute;
-	top:7em;
+	top:9em;
 	width: 60px;
 	height: 40px;
 	background: url(../images/icons.png) no-repeat -148px -6px;
-	left:20em;
+	left:14em;
     
 }
 .testimonial span.quotes-down {
 	position: absolute;
-	top:13em;
-	width: 60px;
+	top:14em;
+	width: 80px;
 	height: 40px;
 	background: url(../images/icons.png) no-repeat -232px -6px;
-	right: 14em;
+	right: 12em;
  
    
 }
@@ -506,7 +506,7 @@ i.like{
     color:white;
     /*background-color: white;
      font-style: italic;*/
-    font-size: 30px;
+    font-size: 36px;
     font-style: italic;
     font-family: Garamond,sans-serif;
     /*font-family: 'Montserrat', sans-serif;*/
@@ -518,7 +518,7 @@ i.like{
 	font-weight: bold;
 }
 .test_wrap{
-	width: 52%;
+	width: 82%;
     margin:0 auto;
     
 }
@@ -526,7 +526,7 @@ i.like{
     /*color: #f2efe5;*/
     color:black;
     float: right;
-    font-size: 15px;
+    font-size: 18px;
     font-style: italic;
     margin-right: 12%;
     margin-top: 6%;
@@ -678,9 +678,10 @@ ul.social li a i.google:hover{
 	background-position:-14px -215px;
 }
 .team-grid-4{
-	background-image: url(../images/team-member-2.png);
+	background-image: url(../images/team-member-2.jpg);
     background-color: #f2efe5;
-	background-size: auto;
+	/*background-size: auto;*/
+    background-size: 100% 120%;
 	background-position: center;
 	background-repeat: no-repeat;
 	min-height:505px;
@@ -688,9 +689,11 @@ ul.social li a i.google:hover{
    
   
 }
+/*
 .arrow-icon1 {
 	height: 30px;
 	width: 28px;
+    
 	display: block;
 	background: url(../images/arrow.png);
 	background-position: 0px -3px;
@@ -700,8 +703,10 @@ ul.social li a i.google:hover{
 	z-index: 999;
 	top:25%;
 }
+*/
 .arrow-icon1-r {
 	left: -27px;
+    
 }
 .team-grid-5{
 	/*background: #ccc8b6;*/
@@ -931,16 +936,22 @@ ul.popup_links.g_links {
 	padding:8em 0;
 }
 .contact-form {
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
+}
+.contact-info{
+    /*
+    position: relative;
+    left: 200px;
+    */
 }
 .contact-form input[type="text"] {
 	display: block;
-	width: 100%;
-	padding: 20px;
+	width: 90%;
+	padding: 10px;
 	border: 2px solid #000;
 	outline: none;
-	margin-bottom:4em;
+	margin-bottom:2em;
 	font-size:0.95em;
 	color: #BDBDBD;
 	background-color: #ffffff;
@@ -948,8 +959,8 @@ ul.popup_links.g_links {
 }
 .contact-form textarea {
 	display: block;
-	width: 100%;
-	padding: 15px;
+	width: 90%;
+	padding: 10px;
 	border:2px solid #000;
 	outline: none;
 	font-size:0.95em;
@@ -963,15 +974,15 @@ ul.popup_links.g_links {
 	background: #9a977a;
 	text-transform: uppercase;
 	border: none;
-	padding:1.5em 1em;
+	padding:1.0em 1em;
 	position: absolute;
 	cursor: pointer;
 	color: #FFF;
 	outline: none;
 	font-size: 1em;
-	width:70%;
+	width:65%;
 	text-align: center;
-	margin-top: 1.5em;
+	margin-top: 1.0em;
 	font-weight:normal;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -983,6 +994,7 @@ ul.popup_links.g_links {
 }
 .contact-left{
 	text-align:center;
+    
 }
 .contact-left h4 {
     color: #000;
@@ -1001,18 +1013,21 @@ ul.contact-list-one {
 	padding: 0;
 	list-style: none;
 	text-align:left;
+    
 }
 ul.contact-list-one h5, ul.contact-list-two h5{
 	color:#000;
 	font-size:1em;
 	text-transform:uppercase;
 	font-weight:bold;
+    
 }
 ul.contact-list-one li, ul.contact-list-two li{
 	color:#000;
 	font-size:0.95em;
 	line-height: 1.8em;
 	text-transform:uppercase;
+    
 }
 .contact-list-one li a {
     color: #000000;
