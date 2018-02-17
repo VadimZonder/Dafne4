@@ -112,7 +112,8 @@ $(document).ready(function(){
                                                                                                                            
                                             
  <!-- language script------------------------------------------------------------------------------------------------------------------------>
-                                            <script type="text/javascript">
+                                  <!-- language script- UNCOMENT WHEN REQUIRED         
+                                        <script type="text/javascript">
                                             
                                                     //Flag Button Function
                                                     var button = document.getElementById("language");
@@ -122,56 +123,16 @@ $(document).ready(function(){
                                                           
                                                           //Flag change
                                                           document.getElementById("language").style.backgroundImage = "url('images/flags/frenchIcon20_16.png')";
-                                                          
-                                               /*            
-                                            <!--English Menu-->   
-                                                    //document.getElementById("home").innerHTML = "HOME";     
-                                            <!--English About US-->
-                                                          document.getElementById("aboutUs1").innerHTML = "Dafne Art Project is an Irish provider of Art related services to businesses such as big corporations, small companies, hotels and offices.";
-                                                          document.getElementById("aboutUs2").innerHTML = "We aspire to foster the appreciation of shapes, colors and designs that can change the atmosphere of work places and urban spaces. Our portfolio boasts a range of over a hundred international artists from London, Rome, Paris, Dublin, Amsterdam and Moscow.";
-                                                          document.getElementById("aboutUs3").innerHTML = "We aim to collaborate with architects, construction firms and galleries in Europe and Usa to provide high value Art works,murales,sculptures etc to final clients.";
-                                            <!--English Team-->
-                                                          <!--English Team Memebr 1 -->
-                                                           document.getElementById("team1-name").innerHTML = "Vadim Malakhovski";
-                                                           document.getElementById("team1-p1").innerHTML = "Vadim is not part of the team but for the purpose of demostration he features here in this slot of a team member.";
-                                                           document.getElementById("team1-p2").innerHTML = "Obviously this picture will be deleted upon the completion of this project. I would love to write more but I do not have any idea of what to write. I just need some text to see how it all looks together. BTW a reminder DO NOT forget to change the links.";
-                                                          <!--English Team Memebr 2 -->
-                                                           document.getElementById("team2-name").innerHTML = "Esla";
-                                                           document.getElementById("team2-p1").innerHTML = "Elsa is part of the team and for the purpose of demostration he features here in this slot of a team member.";
-                                                           document.getElementById("team2-p2").innerHTML = "Obviously this picture will be deleted upon the completion of this project. I would love to write more but I do not have any idea of what to write. I just need some text to see how it all looks together. BTW a reminder DO NOT forget to change the links.";
-                                                          <!--English Team Memebr 3 Partners -->
-                                                           document.getElementById("team3-name").innerHTML = "Our Partners";
-                                                           document.getElementById("team3-p1").innerHTML = "Our Partners page is still under construction. Once completed you will be able to see the list of all of our partners.";
-                                                          
-                                            <!--English Quotes--> 
-                                                          document.getElementById("languageQuotes").innerHTML = "Where the spirit does not work with the hand, there is no Art.";
-                                            <!--French-->
-                                                      } else {
-                                                        button.setAttribute("data-text-original", button.innerHTML);
-                                                        button.innerHTML = button.getAttribute("data-text-swap");
-                                            <!--French Menu-->   
-                                                    //document.getElementById("home").innerHTML="INIZIO";
-                                           <!--French About US-->               
-                                                          document.getElementById("aboutUs1").innerHTML = "Dafne Art Project e' una societa' irlandese che fornisce servizi correlati all'arte alle imprese, piccole compagnie, uffici professionali e alberghi.";
-                                                          
-                                                          document.getElementById("aboutUs2").innerHTML = " Cio` a cui aspiriamo e`incoraggiare l'apprezzamento di nuove forme, colori e design e dimostrare come riescano a cambiare l'atmosfera nei luoghi di lavoro e negli spazi urbani. Il nostro portfolio vanta piu` di cento artisti provenienti dalle principali capitali europee: Londra, Roma, Amsterdam, Parigi, Dublino ect";
-                                                          
-                                                          document.getElementById("aboutUs3").innerHTML ="Puntiamo a collaborare con architetti, arredatori d'interni e compagnie di costruzione a cui fornire opere d'arte di alto valore, murales, sculture megalitiche ect ai loro clienti.";
-                                                        
-                                                          document.getElementById("language").style.backgroundImage = "url('images/flags/britishIcon20_16.png')";
-                                                          
-                                            <!--French Quotes--> 
-                                                          document.getElementById("languageQuotes").innerHTML = "Là où l'esprit ne travaille pas avec la main, il n'y a pas d'art.";
-                                                          */
+                                        
                                                       }
                                                     }, false);
  
                                             </script>
+                                        language script- UNCOMENT WHEN REQUIRED--> 
                                         
+<!--MENU------------------------------------------------------------------------------------------------------------------------------->  
 										<a id="menu-toggle" class="anchor-link" href="#"><img src="images/nav.png" alt="" /></a>
-										<ul class="nav-list" id="menu">
-
-   <!--MENU------------------------------------------------------------------------------------------------------------------------------->                                         
+										<ul class="nav-list" id="menu">                                       
                                             <!--border css  border:1px grey solid; -->
 											 <!-- <li><a id="home" href="#"><span>Home</span></a></li> -->
 											<li><a id="about-us" href="#about" class="scroll"><span>About US</span></a></li>
@@ -181,10 +142,13 @@ $(document).ready(function(){
 											<!-- logo -->
 											<li><a href="#gallery" class="scroll"><span>Services</span></a></li>
             <!--href="#contact"-->			<li><a href="#contact" class="scroll"><span>Contact</span></a></li>
-                                            <!-- language button-->
+                                           
+                                            
+   <!-- language button       language script- UNCOMENT WHEN REQUIRED 
 											<li><a  class="scroll">
                                         <button id="language" data-text-swap="English">Français</button></a></li>
                                              <!-- language script-->
+          <!--language script- UNCOMENT WHEN REQUIRED                                     
                                             <script type="text/javascript">
                                             
                                                     var button = document.getElementById("language");
@@ -192,28 +156,35 @@ $(document).ready(function(){
                                                       if (button.getAttribute("data-text-swap") == button.innerHTML) {
                                                         button.innerHTML = button.getAttribute("data-text-original");
                                                     
-                                                           document.getElementById("language").style.backgroundImage = "url('images/flags/frenchIcon20_16.png')";                                           <!--English Menu-->   
+                                                           document.getElementById("language").style.backgroundImage = "url('images/flags/frenchIcon20_16.png')";                                           <!--English Menu-->
+          <!--       language script- UNCOMENT WHEN REQUIRED                                     
                                                     //document.getElementById("about-us").innerHTML = "About Us";     
                                             <!--English About US-->
+      <!--      language script- UNCOMENT WHEN REQUIRED                                         
                                                           document.getElementById("aboutUs1").innerHTML = "Dafne Art Project is an Irish provider of Art related services to businesses such as big corporations, small companies, hotels and offices.";
                                                           document.getElementById("aboutUs2").innerHTML = "We aspire to foster the appreciation of shapes, colors and designs that can change the atmosphere of work places and urban spaces. Our portfolio boasts a range of over a hundred international artists from London, Rome, Paris, Dublin, Amsterdam and Moscow.";
                                                           document.getElementById("aboutUs3").innerHTML = "We aim to collaborate with architects, construction firms and galleries in Europe and Usa to provide high value Art works,murales,sculptures etc to final clients.";
                                              <!--English Team-->
                                                           <!--English Team Memebr 1 -->
+    <!--language script- UNCOMENT WHEN REQUIRED                                 
                                                            document.getElementById("team1-name").innerHTML = "Vadim Malakhovski";
                                                            document.getElementById("team1-p1").innerHTML = "Vadim is not part of the team but for the purpose of demostration he features here in this slot of a team member.";
                                                            document.getElementById("team1-p2").innerHTML = "Obviously this picture will be deleted upon the completion of this project. I would love to write more but I do not have any idea of what to write. I just need some text to see how it all looks together. BTW a reminder DO NOT forget to change the links.";
                                                           <!--English Team Memebr 2 -->
+    <!--language script- UNCOMENT WHEN REQUIRED                                          
                                                            document.getElementById("team2-name").innerHTML = "Esla";
                                                            document.getElementById("team2-p1").innerHTML = "Elsa is part of the team and for the purpose of demostration he features here in this slot of a team member.";
                                                            document.getElementById("team2-p2").innerHTML = "Obviously this picture will be deleted upon the completion of this project. I would love to write more but I do not have any idea of what to write. I just need some text to see how it all looks together. BTW a reminder DO NOT forget to change the links.";
                                                           <!--English Team Memebr 3 Partners -->
+    <!--language script- UNCOMENT WHEN REQUIRED                                          
                                                            document.getElementById("team3-name").innerHTML = "Our Partners";
                                                            document.getElementById("team3-p1").innerHTML = "Our Partners page is still under construction. Once completed you will be able to see the list of all of our partners.";
                                             <!--English Quotes--> 
+    <!--language script- UNCOMENT WHEN REQUIRED                                          
                                                           document.getElementById("languageQuotes").innerHTML = "Where the spirit does not work with the hand, there is no Art.";
                                                           
                                          <!--English Services-->
+    <!--language script- UNCOMENT WHEN REQUIRED                                          
                                                            document.getElementById("services").innerHTML = "Services";
                                                            document.getElementById("services1").innerHTML = "Art for Companies";
                                                            document.getElementById("services2").innerHTML = "Art for Professional Offices";
@@ -222,25 +193,30 @@ $(document).ready(function(){
                                                            document.getElementById("services-p2").innerHTML = "Since Dafne is a BtB our customers are mainly other businesses needing Interior design projects incluiding artworks from the most important international artists for their offices, board rooms, main entrances etc.";
                                                            document.getElementById("services-p3").innerHTML = "Dafne Art Project provides a wide range of megalithic sculptures for public and private spaces as squares, gardens etc.";
                                             <!--English Contat-->
+<!--language script- UNCOMENT WHEN REQUIRED                                              
                                                            document.getElementById("contact1").innerHTML = "Contact Us";
                                                            document.getElementById("contact2").innerHTML = "Kindly fill the form to share your ideas with us or send us an email to ask for our support, we will be happy to help you.";
                                                            document.getElementById("contact3").innerHTML = "Info :";
-                                                           document.getElementById("contact4").innerHTML = "Elsa's Phone :" ;
-                                                           document.getElementById("contact5").innerHTML = "Anthony's Phone :";
-                                                           document.getElementById("contact6").innerHTML = "Email 1 :";
-                                                           document.getElementById("contact7").innerHTML = "Email 2 :";
+                                                           document.getElementById("contact4").innerHTML = "Elsa's Phone : 353 0873460913 " ;
+                                                           document.getElementById("contact5").innerHTML = "Anthony's Phone : 33782877594";
+                                                           document.getElementById("contact6").innerHTML = "Email 1 : elsa@dafneproject.com";
+                                                           document.getElementById("contact7").innerHTML = "Email 2 : anthony@dafneproject.com";
                                                           
                                             <!--English Professional Network-->
+        <!--language script- UNCOMENT WHEN REQUIRED                                      
                                                            document.getElementById("professional1").innerHTML = "In order to guarantee to our clients professionalism and a wide selection of design solutions we use our professional network of architects and interior designers in many European Capitals as Dublin, Rome, Paris...";
                                                            document.getElementById("professional2").innerHTML = "If the artworks you love it's not in your city and you don't know who to turn to for its transportation, no worries, we provide for the shipment of your artwork thanks to our hauliers.";             
                                                         
                                                       } else {
-                          <!--French-->                                  
+                          <!--French--> 
+        <!--language script- UNCOMENT WHEN REQUIRED                                      
                                                         button.setAttribute("data-text-original", button.innerHTML);
                                                         button.innerHTML = button.getAttribute("data-text-swap");
-                                            <!--French Menu-->   
+                                            <!--French Menu-->  
+        <!--language script- UNCOMENT WHEN REQUIRED                                      
                                                     //document.getElementById("about-us").innerHTML="Qui sommes-nous";
-                                           <!--French About US-->               
+                                           <!--French About US-->  
+        <!--language script- UNCOMENT WHEN REQUIRED                                      
                                                           document.getElementById("aboutUs1").innerHTML = "Dafne Art Project e' una societa' irlandese che fornisce servizi correlati all'arte alle imprese, piccole compagnie, uffici professionali e alberghi.";
                                                           
                                                           document.getElementById("aboutUs2").innerHTML = " Cio` a cui aspiriamo e`incoraggiare l'apprezzamento di nuove forme, colori e design e dimostrare come riescano a cambiare l'atmosfera nei luoghi di lavoro e negli spazi urbani. Il nostro portfolio vanta piu` di cento artisti provenienti dalle principali capitali europee: Londra, Roma, Amsterdam, Parigi, Dublino ect";
@@ -251,20 +227,25 @@ $(document).ready(function(){
                                             
                                                     <!--French Team-->
                                                           <!--French Team Memebr 1 -->
+        <!--language script- UNCOMENT WHEN REQUIRED                                      
                                                            document.getElementById("team1-name").innerHTML = "Vadim Malakhovski French";
                                                            document.getElementById("team1-p1").innerHTML = "Vadim French Translation.";
                                                            document.getElementById("team1-p2").innerHTML = "Obviously French Translation..";
                                                           <!--French Team Memebr 2 -->
+    <!--language script- UNCOMENT WHEN REQUIRED                                          
                                                            document.getElementById("team2-name").innerHTML = "Esla French Translation.";
                                                            document.getElementById("team2-p1").innerHTML = "Elsa is part of theFrench Translation.";
                                                            document.getElementById("team2-p2").innerHTML = "Obviously this picture French Translation.";
                                                           <!--French Team Memebr 3 Partners -->
+            <!--language script- UNCOMENT WHEN REQUIRED                                  
                                                            document.getElementById("team3-name").innerHTML = "Our Partners French";
                                                            document.getElementById("team3-p1").innerHTML = "Our Partners page French.";
                                             <!--French Quotes--> 
+                <!--language script- UNCOMENT WHEN REQUIRED                              
                                                           document.getElementById("languageQuotes").innerHTML = "Là où l'esprit ne travaille pas avec la main, il n'y a pas d'art.";
                                                           
                                              <!--French Services-->
+    <!--language script- UNCOMENT WHEN REQUIRED                                          
                                                            document.getElementById("services").innerHTML = "French Serv";
                                                            document.getElementById("services1").innerHTML = "French Art for Comp";
                                                            document.getElementById("services2").innerHTML = "French Art for Prof Of";
@@ -274,16 +255,18 @@ $(document).ready(function(){
                                                            document.getElementById("services-p3").innerHTML = "Dafne Art Project provides French."; 
                                                           
                                              <!--French Contat-->
+                <!--language script- UNCOMENT WHEN REQUIRED                              
                                                            document.getElementById("contact1").innerHTML = "Contact French Us";
                                                            document.getElementById("contact2").innerHTML = "Kindly fill   French.";
                                                            document.getElementById("contact3").innerHTML = "Info French :";
-                                                           document.getElementById("contact4").innerHTML = "Elsa's Phone French :" ;
-                                                           document.getElementById("contact5").innerHTML = "Anthony's Phone French :";
-                                                           document.getElementById("contact6").innerHTML = "Email 1  French:";
-                                                           document.getElementById("contact7").innerHTML = "Email 2  French:";  
+                                                           document.getElementById("contact4").innerHTML = "FR Elsa's Phone : 353 0873460913 " ;
+                                                           document.getElementById("contact5").innerHTML = "FR Anthony's Phone : 33782877594";
+                                                           document.getElementById("contact6").innerHTML = "FR Email 1 : elsa@dafneproject.com";
+                                                           document.getElementById("contact7").innerHTML = "FR Email 2 : anthony@dafneproject.com";  
                                                           
                                                                   
                                             <!--French Professional Network-->
+                <!--language script- UNCOMENT WHEN REQUIRED                              
                                                            document.getElementById("professional1").innerHTML = "In order to guarantee to our clients professionalism French";
                                                            document.getElementById("professional2").innerHTML = "If the artworks French.";         
                                                       }
@@ -324,11 +307,11 @@ $(document).ready(function(){
 							</div>
 							<div class="col-md-6 about_right wow fadeInUp" data-wow-delay="0.0s"> 
  <!--Image about section-->	                               
-								  <div class="about_text" id="about">
+								  <div class="about_text" id="about" style="text-align:center">
                                        
                                       <br>
-										<img src="images/tatto.jpg" class="img-responsive" style="float:left; margin-right:40px" alt=""/>
-                                      <img src="images/tatto.jpg" class="img-responsive" style="float:right; margin-left:40px" alt=""/> 
+										<img src="images/tatto.jpg" class="img-responsive" style="float:left; margin-right:40px;  padding: 0px 0px;" alt=""/>
+                                      <img src="images/tatto.jpg" class="img-responsive" style="float:right; margin-left:40px;  padding: 0px 0px;" alt=""/> 
                                      <!-- <img src="images/tatto.png" class="img-responsive" style="float:left; margin-right:40px" alt=""/>
                                       <img src="images/tatto.png" class="img-responsive" style="float:right; margin-left:40px" alt=""/>   -->
 										<!--<h3>Here you may write a shot intorduction about yourself comapny and what you do.</h3>---> 
@@ -846,7 +829,49 @@ $(document).ready(function(){
 						</div>
                     </div>
 			</section>
-<!-- END OF TWITER/NEWS SECTION ---------------------------------------------------------------------------------------------------------------->            
+<!-- END OF TWITER/NEWS SECTION ---------------------------------------------------------------------------------------------------------------->    
+            
+            <!-- Services text section------------------------------------------------------------------------------------------------->			
+            <section id="about-section"  style=" background-color:#E6E7E9"> 
+	
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+			<h2 class="w3-validation">class="scroll">For W3 Validation </h2> 
+			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+	<!--Image about section-->	<!--	
+					<div class="container-fluid">  
+						<div class="row" id="about">
+							<div class="col-md-6 about_left">
+							     <a href="#" class="button-one about_btn button-type-one button-box">About Us</a>
+							</div>
+							<div class="col-md-6 about_right wow fadeInUp" data-wow-delay="0.0s"> 
+ <!--Image about section-->	                               
+								  <div class="about_text" id="about" style="text-align:center">
+                                       
+                                      <br>
+										<img src="images/tatto2.jpg" class="img-responsive" style="float:left; margin-right:40px" alt=""/>
+                                      <img src="images/tatto2.jpg" class="img-responsive" style="float:right; margin-left:40px" alt=""/> 
+                                     <!-- <img src="images/tatto.png" class="img-responsive" style="float:left; margin-right:40px" alt=""/>
+                                      <img src="images/tatto.png" class="img-responsive" style="float:right; margin-left:40px" alt=""/>   -->
+										<!--<h3>Here you may write a shot intorduction about yourself comapny and what you do.</h3>---> 
+                                        <br><br><br>
+										<p id="services-p1">our services are split out in three different categories: Art for business, Art for professional offices and hotels and Art for public spaces</p>
+                                        <br>
+										<p id="services-p2">Since Dafne is a BtB our customers are mainly other businesses needing Interior design projects incluiding artworks from the most important international artists for their offices, board rooms, main entrances etc.</p>
+                                        <br>
+                                        <p id="services-p3">Dafne Art Project provides a wide range of megalithic sculptures for public and private spaces as squares, gardens et.</p>
+                                      <br> <br> <br>
+    
+								  </div>
+                <!--
+							</div>
+						</div> 
+					 
+					</div>
+-->
+            </section>
+
+
+<!--END of Servisec text Section ---------------------------------------------------------------------------------------------------------------------->	
 <!-- IMAGE-LINKS  GALLERY SECTION 2 ----------------------------------------------------------------------------------------------------------->            	
 			<section id="gallery-two-image-section" > <!-- Gallery Two Section -->
 			
@@ -2108,47 +2133,7 @@ function show(elementId) {
 <!--2 Gallery to apper ART FOR Public Spaces--------------------------------------------------------------------->
  
             
-            <!-- Services text section------------------------------------------------------------------------------------------------->			
-            <section id="about-section"  style="border-bottom-style:solid; background-color:#E6E7E9"> 
-	
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			<h2 class="w3-validation">class="scroll">For W3 Validation </h2> 
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-	<!--Image about section-->	<!--	
-					<div class="container-fluid">  
-						<div class="row" id="about">
-							<div class="col-md-6 about_left">
-							     <a href="#" class="button-one about_btn button-type-one button-box">About Us</a>
-							</div>
-							<div class="col-md-6 about_right wow fadeInUp" data-wow-delay="0.0s"> 
- <!--Image about section-->	                               
-								  <div class="about_text" id="about">
-                                       
-                                      <br>
-										<img src="images/tatto2.png" class="img-responsive" style="float:left; margin-right:40px" alt=""/>
-                                      <img src="images/tatto2.png" class="img-responsive" style="float:right; margin-left:40px" alt=""/> 
-                                     <!-- <img src="images/tatto.png" class="img-responsive" style="float:left; margin-right:40px" alt=""/>
-                                      <img src="images/tatto.png" class="img-responsive" style="float:right; margin-left:40px" alt=""/>   -->
-										<!--<h3>Here you may write a shot intorduction about yourself comapny and what you do.</h3>---> 
-                                        <br><br><br>
-										<p id="services-p1">our services are split out in three different categories: Art for business, Art for professional offices and hotels and Art for public spaces</p>
-                                        <br>
-										<p id="services-p2">Since Dafne is a BtB our customers are mainly other businesses needing Interior design projects incluiding artworks from the most important international artists for their offices, board rooms, main entrances etc.</p>
-                                        <br>
-                                        <p id="services-p3">Dafne Art Project provides a wide range of megalithic sculptures for public and private spaces as squares, gardens et.</p>
-                                      <br> <br> <br>
-    
-								  </div>
-                <!--
-							</div>
-						</div> 
-					 
-					</div>
--->
-            </section>
-
-
-<!--END of Servisec text Section ---------------------------------------------------------------------------------------------------------------------->				
+            			
        
 <!-- CONTACT SECTION ------------------------------------------------------------------------------------------------------------------------>
 			<section id="contact-section"> <!-- Contact info Section-->
@@ -2171,8 +2156,8 @@ function show(elementId) {
                                                    <li id="contact7">Email 2: <a href="mailto:"> anthony@dafneproject.com</a></li>
 												</ul>
                                             
-												<ul class="contact-list-two">
-												                            <iframe width="310" height="135" src="https://www.youtube.com/embed/CElUxx-ZkkM">
+												<ul class="contact-list-two" style="margin-right:50px;  padding: 0px 0px 0px 0px;">
+												                            <iframe width="250" height="135" src="https://www.youtube.com/embed/CElUxx-ZkkM">
 </iframe>
                                                     
 												</ul>
@@ -2270,7 +2255,7 @@ function show(elementId) {
 							</div>
 							<div class="col-md-6 about_right wow fadeInUp" data-wow-delay="0.0s"> 
  <!--Image about section-->	                               
-								  <div class="about_text" id="about">
+								  <div class="about_text" id="about" style="text-align:center">
                                        
                                       <br>
 										<img src="images/tatto.jpg" class="img-responsive" style="float:left; margin-right:40px" alt=""/>
