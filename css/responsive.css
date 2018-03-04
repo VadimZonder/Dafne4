@@ -86,13 +86,14 @@ ul.social li {
   float: left;
   min-height: 201px;
   text-align: center;
-  width: 40%;
+  width: 100%;
 }
 .gallery_btn {
   margin-top: 43px;
 }
 .gallery-two-row-one {
-  min-height: 201px;
+  min-height: 291px;
+    width: 100%;
 }
 ul.gallery-grid-one li {
   float: left;
@@ -125,6 +126,11 @@ ul.gallery-grid-four li {
 }
 .gallery-two-popup-links li {
   margin-left: 16px;
+}
+
+#youtube{
+    margin-left:-60px;  
+    padding: 0px 0px 0px 40px;    
 }
 
 }
@@ -421,6 +427,19 @@ ul.contact-social li {
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
 
+.img-hide{
+   display:none;     
+}
+
+.img-responsive2{
+ float:center;
+  padding: 0px 60px 50px 60px;
+  width:96%;
+    
+   
+
+}
+    
 .header {
   min-height: 200px;
 }
