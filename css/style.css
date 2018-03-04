@@ -868,14 +868,14 @@ i.tw_icon{
 .gallery_btn {
 	position: relative;
 	z-index: 1;
-	margin-top: 135px;
+	margin-top: 45px;
 }
 .gallery-two-row-one {
     padding: 0;
     display: block;
     overflow: hidden;
-    width: 80%;
-	min-height: 350px;
+    width: 100%;
+	min-height: 490px;
     
 }
 .gallery-two-row-two{
